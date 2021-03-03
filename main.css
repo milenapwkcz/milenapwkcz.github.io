@@ -1,6 +1,10 @@
-body{
+html
+{
     background-color: midnightblue;
+}
+
+body{
     color:lightblue;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: x-large;
+    font-size: xx-large;
 }
