@@ -1,3 +1,11 @@
+header{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    background-color: rgb(148, 212, 231);
+    color: black;
+
+}
+
 head{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
@@ -8,5 +16,19 @@ head{
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    background-color: rgb(242, 249, 250);
+    background-color: white;
+}
+
+h3{
+    text-transform: capitalize;
+    text-decoration-line: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(148, 212, 231);
+
+}
+
+section
+{
+    flex: 0 0 66.6%;
+    max-width: 66.6%;
 }
