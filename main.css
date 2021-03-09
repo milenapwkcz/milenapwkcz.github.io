@@ -1,5 +1,12 @@
+head{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    background-color: rgb(202, 194, 194);
+    color:white;
+}
+
 body{
-    background-color: rgb(242, 249, 250);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
+    background-color: rgb(242, 249, 250);
 }
