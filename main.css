@@ -3,6 +3,7 @@ header{
     font-size: 40px;
     background-color: rgb(148, 212, 231);
     color: black;
+    grid-area: header;
 
 }
 
@@ -21,6 +22,7 @@ body{
     grid-template-columns: 50px 50px 50px 50px;
     grid-template-rows: auto;
     grid-template-areas: 
+    "header header header header"
     "sidebar main main main";
 }
 
@@ -36,9 +38,8 @@ h3{
 
 section
 {
-    width: 400px;
     border: 2px rgb(148, 212, 231);
-    padding: 50px;
+    padding: 30px;
     grid-area: main;
 }
 
@@ -48,4 +49,9 @@ div{
     padding: 30px;
     margin: 10px; 
     grid-area: main;
+}
+
+sidebar{
+    background-color: rgb(148, 212, 231);
+    font-size: 10px;
 }
