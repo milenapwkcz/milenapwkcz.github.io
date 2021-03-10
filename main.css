@@ -21,8 +21,6 @@ body{
     grid-template-columns: 50px 50px 50px 50px;
     grid-template-rows: auto;
     grid-template-areas: 
-    "header header header header"
-    "sidebar main main main"
     "sidebar main main main";
 }
 
@@ -32,6 +30,7 @@ h3{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: rgb(148, 212, 231);
     text-align: center;
+    grid-area: main;
 
 }
 
@@ -40,6 +39,7 @@ section
     width: 400px;
     border: 2px rgb(148, 212, 231);
     padding: 50px;
+    grid-area: main;
 }
 
 div{
@@ -47,4 +47,5 @@ div{
     border: 2px solid rgb(148, 212, 231);
     padding: 30px;
     margin: 10px; 
+    grid-area: main;
 }
