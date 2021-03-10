@@ -18,8 +18,8 @@ body{
     font-size: 16px;
     background-color: white;
     display: grid;
-    grid-template-columns: [sekcjaboczna] 50px  [sekcjaglownak] auto;
-    grid-template-rows: [naglowek] 30px [sekcjaglownar] auto;
+    grid-template-columns: [sekcjaboczna] 100px  [sekcjaglownak] auto;
+    grid-template-rows: [naglowek] 80px [sekcjaglownar] auto;
 }
 
 h3{
