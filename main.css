@@ -30,8 +30,8 @@ body{
 .sidebar{
     background-color: rgb(148, 212, 231);
     font-size: 16px;
-    grid-column-start: 1;
-    grid-column-end: span line3;
+    grid-column-start: col4-start;
+    grid-column-end: end;
     grid-row-start: 2;
     grid-row-end: last-line;
 }
@@ -47,8 +47,8 @@ h3{
 section
 {
     border: 2px rgb(148, 212, 231);
-    grid-column-start: line3;
-    grid-column-end: end;
+    grid-column-start: start;
+    grid-column-end: col4-start;
     grid-row-start: 2;
     grid-row-end: last-line;
 }
