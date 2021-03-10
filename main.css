@@ -17,7 +17,7 @@ header{
 {
     display: grid;
     padding: 3vw;
-    grid-template-columns: [first] 100px [line2] 50px [line3] auto [col4-start] 50px [five] 1000px [end];
+    grid-template-columns: [first] 400px [line2] 50px [line3] auto [col4-start] 50px [five] 1000px [end];
     grid-template-rows: [row1-start] 100px [row1-end] 200px [third-line] auto [last-line];
 }
 
@@ -36,6 +36,7 @@ body{
     grid-column-end: end;
     grid-row-start: 2;
     grid-row-end: last-line;
+    height: 200px;
 }
 
 h3{
@@ -72,5 +73,10 @@ div{
 .ogolne
 {
     width: 400px;
+}
+
+.zdjecie
+{
+    border: 2px rgb(148, 212, 231);
 }
 
