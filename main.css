@@ -10,10 +10,6 @@ header{
     grid-area: header;
 }
 
-img{
-    grid-area: zdj;
-}
-
 .container
 {
     display: grid;
@@ -60,5 +56,10 @@ div{
     border: 2px solid rgb(148, 212, 231);
     padding: 30px;
     margin: 10px; 
+}
+
+img
+{
+    grid-area: zdj;
 }
 
