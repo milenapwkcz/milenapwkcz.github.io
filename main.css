@@ -10,18 +10,22 @@ header{
     grid-area: header;
 }
 
+img{
+    grid-area: zdj;
+}
+
 .container
 {
     display: grid;
     padding: 3vw;
-    grid-template-columns: 80px auto;
+    grid-template-columns: 80px auto 40px;
     grid-template-rows: auto;
     grid-template-areas: 
-    "header header"
-    "boczna main"
-    "boczna main"
-    "boczna main"
-    "boczna main";
+    "header header zdj"
+    "boczna main main"
+    "boczna main main"
+    "boczna main main"
+    "boczna main main";
 }
 
 body{
