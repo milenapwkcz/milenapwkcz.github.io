@@ -1,16 +1,13 @@
 h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
-    grid-area: header;
 }
 
 header{
     font-size: 16px;
     background-color: rgb(148, 212, 231);
     color: black;
-    grid-column: sekcjaglownak;
-    grid-row: naglowek;
-
+    grid-area: header;
 }
 
 body{
@@ -18,8 +15,21 @@ body{
     font-size: 16px;
     background-color: white;
     display: grid;
-    grid-template-columns: [sekcjaboczna] 100px  [sekcjaglownak] auto;
-    grid-template-rows: [naglowek] 80px [sekcjaglownar] auto;
+    padding: 3vw;
+    grid-template-columns: 1k 2k;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "boczna main main"
+    "boczna main main"
+    "boczna main main"
+    "boczna main main";
+}
+
+.sidebar{
+    background-color: rgb(148, 212, 231);
+    font-size: 16px;
+    grid-area: boczna;
 }
 
 h3{
@@ -33,8 +43,7 @@ h3{
 section
 {
     border: 2px rgb(148, 212, 231);
-    grid-column: sekcjaglownak;
-    grid-row: sekcjaglownar;
+    grid-area: main;
 }
 
 
@@ -45,9 +54,3 @@ div{
     margin: 10px; 
 }
 
-sidebar{
-    background-color: rgb(148, 212, 231);
-    font-size: 16px;
-    grid-column: sekcjaboczna;
-    grid-row: sekcjaglownar;
-}
