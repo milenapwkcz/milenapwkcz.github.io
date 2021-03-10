@@ -10,13 +10,11 @@ header{
     grid-area: header;
 }
 
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    background-color: white;
+.container
+{
     display: grid;
     padding: 3vw;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 80px auto;
     grid-template-rows: auto;
     grid-template-areas: 
     "header header"
@@ -24,6 +22,12 @@ body{
     "boczna main"
     "boczna main"
     "boczna main";
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: white;
 }
 
 .sidebar{
