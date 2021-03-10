@@ -14,7 +14,7 @@ header{
 {
     display: grid;
     padding: 3vw;
-    grid-template-columns: 90px 80px 40px;
+    grid-template-columns: 90px 50px 40px;
     grid-template-rows: auto;
     grid-template-areas: 
     "header header zdj"
