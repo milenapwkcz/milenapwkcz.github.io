@@ -1,6 +1,11 @@
-header{
+h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
+    grid-area: header;
+}
+
+header{
+    font-size: 16px;
     background-color: rgb(148, 212, 231);
     color: black;
     grid-area: header;
