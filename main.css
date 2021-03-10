@@ -7,21 +7,18 @@ header{
     font-size: 16px;
     background-color: rgb(148, 212, 231);
     color: black;
-    grid-area: header;
+    grid-column-start: first;
+    grid-column-end: span end;
+    grid-row-start: row1-start;
+    grid-row-end: row1-end;
 }
 
 .container
 {
     display: grid;
     padding: 3vw;
-    grid-template-columns: 90px 50px 40px;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header zdj"
-    "boczna main main"
-    "boczna main main"
-    "boczna main main"
-    "boczna main main";
+    grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+    grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
 }
 
 body{
@@ -33,7 +30,10 @@ body{
 .sidebar{
     background-color: rgb(148, 212, 231);
     font-size: 16px;
-    grid-area: boczna;
+    grid-column-start: 1;
+    grid-column-end: span line3;
+    grid-row-start: 2;
+    grid-row-end: last-line;
 }
 
 h3{
@@ -47,7 +47,10 @@ h3{
 section
 {
     border: 2px rgb(148, 212, 231);
-    grid-area: main;
+    grid-column-start: line3;
+    grid-column-end: end;
+    grid-row-start: 2;
+    grid-row-end: last-line;
 }
 
 
@@ -57,9 +60,3 @@ div{
     padding: 30px;
     margin: 10px; 
 }
-
-img
-{
-    grid-area: zdj;
-}
-
