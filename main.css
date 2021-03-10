@@ -63,3 +63,9 @@ div{
     margin: 10px; 
 }
 
+.info
+{
+    display: flex;
+    flex-direction: row;
+}
+
