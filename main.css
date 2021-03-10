@@ -33,15 +33,14 @@ h3{
     background-color: rgb(148, 212, 231);
     text-align: center;
     grid-area: main;
-
 }
 
 section
 {
     border: 2px rgb(148, 212, 231);
-    padding: 30px;
     grid-area: main;
 }
+
 
 div{
     width: 400px;
