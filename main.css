@@ -8,7 +8,8 @@ header{
     font-size: 16px;
     background-color: rgb(148, 212, 231);
     color: black;
-    grid-area: header;
+    grid-column: sekcjaglownak;
+    grid-row: naglowek;
 
 }
 
@@ -24,11 +25,8 @@ body{
     font-size: 16px;
     background-color: white;
     display: grid;
-    grid-template-columns: 50px 50px 50px 50px;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header header"
-    "sidebar main main main";
+    grid-template-columns: [sekcjaboczna] 50px  [sekcjaglownak] auto;
+    grid-template-rows: [naglowek] 30px [sekcjaglownar] auto;
 }
 
 h3{
@@ -37,13 +35,13 @@ h3{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: rgb(148, 212, 231);
     text-align: center;
-    grid-area: main;
 }
 
 section
 {
     border: 2px rgb(148, 212, 231);
-    grid-area: main;
+    grid-column: sekcjaglownak;
+    grid-row: sekcjaglownar;
 }
 
 
@@ -52,10 +50,11 @@ div{
     border: 2px solid rgb(148, 212, 231);
     padding: 30px;
     margin: 10px; 
-    grid-area: main;
 }
 
 sidebar{
     background-color: rgb(148, 212, 231);
     font-size: 10px;
+    grid-column: sekcjaboczna;
+    grid-row: sekcjaglownar;
 }
