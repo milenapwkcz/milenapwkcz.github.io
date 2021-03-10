@@ -72,6 +72,10 @@ div{
 
 .ogolne
 {
-    width: 400px;
+    width: 300px;
+    border: 2px solid rgb(148, 212, 231);
+    padding: 30px;
+    margin: 10px; 
+    height: 400px;
 }
 
