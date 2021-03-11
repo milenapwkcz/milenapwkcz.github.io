@@ -2,7 +2,7 @@
     display:grid;
     padding:20px;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 150px 40px 40px 40px 40px 40px;
+    grid-template-rows: 200px 40px 40px 40px 40px 40px;
     grid-template-areas: 
     "header header"
     "zdjecie boczna"
@@ -66,4 +66,16 @@ div{
 h3{
     background-color: rgb(191, 233, 243);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(43, 107, 122)
+}
+
+.miejscenauki
+{
+    font-style: oblique;
+    color:rgb(43, 107, 122) 
+}
+
+.nazwa{
+    font-style:inherit;
+    color:rgb(43, 107, 122)
 }
