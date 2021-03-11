@@ -35,6 +35,8 @@ p{
 .sidebar{
     grid-area: main;
     background-color: rgb(191, 233, 243);
+    height: 800px;
+    
 }
 
 .nazwadanych
