@@ -5,7 +5,7 @@
     grid-template-rows: 150px 40px 40px 40px 40px 40px;
     grid-template-areas: 
     "header zdjecie"
-    "main zdjecie"
+    "main boczna"
     "main boczna"
     "main boczna"
     "main boczna"
@@ -35,6 +35,7 @@ p{
 .sidebar{
     grid-area: main;
     background-color: rgb(191, 233, 243);
+    width: ;
 }
 
 .nazwadanych
