@@ -58,7 +58,8 @@ p{
 }
 
 div{
-    border: 2px rgb(191, 233, 243);
+    border: 3px rgb(191, 233, 243);
+    border-style: double;
     margin: 5px;
     padding: 20px;
 }
@@ -83,4 +84,14 @@ h3{
 .nazwa{
     font-style:inherit;
     color:rgb(43, 107, 122)
+}
+
+.data
+{
+    font-size: 10px;
+}
+
+.pracodawca
+{
+    font-weight: bold;
 }
