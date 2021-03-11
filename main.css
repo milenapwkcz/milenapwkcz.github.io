@@ -36,7 +36,7 @@ p{
 .sidebar{
     grid-area: main;
     background-color: rgb(191, 233, 243);
-    height: 2000px;
+    height: 1500px;
     
 }
 
