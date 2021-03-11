@@ -51,3 +51,13 @@ p{
 {
     grid-area: zdjecie;
 }
+
+.szczegoly{
+    border: 2px rgb(191, 233, 243);
+    margin: 5px;
+}
+
+.tytul{
+    font-style: oblique;
+    color:rgb(43, 107, 122)
+}
