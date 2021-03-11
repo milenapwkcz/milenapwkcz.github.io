@@ -36,7 +36,7 @@ p{
 .sidebar{
     grid-area: main;
     background-color: rgb(191, 233, 243);
-    height: 1500px;
+    height: 1000px;
     text-align: center;
     
 }
@@ -44,6 +44,7 @@ p{
 .nazwadanych
 {
     font-style: oblique;
+    color:rgb(43, 107, 122)
 }
 
 .main
