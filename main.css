@@ -62,3 +62,8 @@ p{
     font-style: oblique;
     color:rgb(43, 107, 122)
 }
+
+h3{
+    background-color: rgb(191, 233, 243);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
