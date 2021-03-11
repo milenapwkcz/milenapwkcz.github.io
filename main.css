@@ -4,9 +4,9 @@
     grid-template-columns: 150px 80px;
     grid-template-rows: 80px 40px 40px 40px 40px 40px;
     grid-template-areas: 
-    "header header"
+    "header zdjecie"
     "main zdjecie"
-    "main zdjecie"
+    "main boczna"
     "main boczna"
     "main boczna"
     "main boczna";
@@ -44,7 +44,7 @@ p{
 
 .main
 {
-    grid-area: main;
+    grid-area: boczna;
 }
 
 .zdj
