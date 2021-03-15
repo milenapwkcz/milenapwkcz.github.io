@@ -56,7 +56,7 @@ p{
     grid-area: boczna;
 }
 
-.sidebar .zdj
+img
 {
     grid-area: main;
     border: 1px solid  rgb(191, 233, 243);;
