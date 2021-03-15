@@ -15,6 +15,7 @@
 
 body{
     font-size: 16px;
+    margin: 0;
 }
 
 .header{
@@ -52,7 +53,7 @@ p{
     grid-area: boczna;
 }
 
-.zdj
+.sidebar .zdj
 {
     grid-area: main;
     border-radius: 8px;
