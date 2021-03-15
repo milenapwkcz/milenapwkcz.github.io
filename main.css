@@ -59,6 +59,7 @@ p{
 .sidebar .zdj
 {
     grid-area: main;
+    border: 1px solid  rgb(191, 233, 243);;
     border-radius: 10px;
 }
 
