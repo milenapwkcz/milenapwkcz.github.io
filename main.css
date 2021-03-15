@@ -56,10 +56,10 @@ p{
     grid-area: boczna;
 }
 
-.sidebar.zdj
+.sidebar .zdj
 {
     grid-area: main;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 div{
