@@ -1,0 +1,120 @@
+.container{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 250px 40px 40px 40px 40px 40px;
+    grid-template-areas: 
+    "header header"
+    "header header"
+    "main boczna"
+    "main boczna"
+    "main boczna"
+    "main boczna";
+    margin: 0;
+    padding: 0;
+	border: 0;
+	font-size: 100%;
+
+}
+
+
+body{
+    font-size: 16px;
+}
+
+.header{
+    grid-area: header;
+    background-color: rgb(191, 233, 243);
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    color:rgb(43, 107, 122)
+}
+
+p{
+    font-style: italic;
+    background-color: rgb(191, 233, 243);
+}
+
+.sidebar{
+    grid-area: main;
+    background-color: rgb(191, 233, 243);
+    height: 1100px;
+    text-align: center;
+    
+}
+
+.nazwadanych
+{
+    font-style: oblique;
+    color:rgb(43, 107, 122)
+}
+
+.main
+{
+    grid-area: boczna;
+}
+
+img
+{
+    grid-area: main;
+    border: 1px solid  rgb(191, 233, 243);;
+    border-radius: 10px;
+}
+
+div{
+    border: 3px rgb(191, 233, 243);
+    border-style: double;
+    margin: 5px;
+    padding: 20px;
+}
+
+.tytul{
+    font-style: oblique;
+    color:rgb(43, 107, 122)
+}
+
+h3{
+    background-color: rgb(191, 233, 243);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(43, 107, 122)
+}
+
+.miejscenauki
+{
+    font-style: oblique;
+    color:rgb(43, 107, 122) 
+}
+
+.nazwa{
+    font-style:inherit;
+    color:rgb(43, 107, 122)
+}
+
+.data
+{
+    font-size: 10px;
+}
+
+.pracodawca
+{
+    font-weight: bold;
+}
+
+.rozdzial
+{
+    display:flex;
+    flex-direction: column;
+}
+
+.icon
+{
+    font-size: 15px;
+    width: 30px;
+}  
+
+li{
+    list-style-type: circle;
+}
+
