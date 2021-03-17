@@ -25,6 +25,7 @@ img
 .centrum
 {
     display:flex;
+    align-content: center;
     justify-content: center;
     flex-direction: column;
     grid-template-rows: 1fr 2fr;
