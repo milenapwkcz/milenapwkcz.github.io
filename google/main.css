@@ -29,9 +29,8 @@ img{
     width: 280px;
     height: 150px;
     display: flex;
+    align-content: center;
     justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .pasekgora
@@ -82,4 +81,22 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+pasekdolprawy
+{
+    display: grid;
+    grid-area: pasekdolp;
+}
+
+pasekdollewy
+{
+    display: grid;
+    grid-area: pasekdoll;
+}
+
+pasekdolcentrum
+{
+    display: grid;
+    grid-area: pasekdols;
 }
