@@ -70,7 +70,6 @@ img{
     grid-area: pasekdolnyp;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;
     align-items: flex-end;
 }
 
@@ -80,7 +79,6 @@ img{
     grid-area: pasekdolnys;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .pasekdolprawy
