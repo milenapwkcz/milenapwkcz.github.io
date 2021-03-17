@@ -19,6 +19,7 @@ body
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-direction: column;
     grid-area: main;
 }
 
@@ -42,3 +43,4 @@ img{
     display: flex;
     flex-direction: row-reverse;
 }
+
