@@ -24,10 +24,11 @@ body
 
 img{
     width: 280px;
-    height: 200px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .pasekgora
@@ -39,5 +40,5 @@ img{
 .etykiety
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
