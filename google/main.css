@@ -61,14 +61,3 @@ img{
     grid-area: pasekdolp;
 }
 
-.pasekdollewy
-{
-    display: grid;
-    grid-area: pasekdoll;
-}
-
-.pasekdolcentrum
-{
-    display: grid;
-    grid-area: pasekdols;
-}
