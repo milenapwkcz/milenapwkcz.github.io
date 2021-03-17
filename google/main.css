@@ -11,7 +11,7 @@ body
     grid-template-areas: 
     "pasekgora pasekgora pasekgora"
     ". main ."
-    "pasekdol pasekdol pasekdol";
+    "pasekdollewy pasekdolsrodek pasekdolprawy";
 }
 
 .centrum
@@ -47,7 +47,32 @@ img{
 
 .wyszukiwarka
 {
+    display: grid;
     grid-area: main;
+    display: flex;
+    align-items: center;
+}
+
+.etykiety2
+{
+    display: grid;
+    grid-area: pasekdollewy;
+    display: flex;
+    flex-direction: row;
+}
+
+.etykiety3
+{
+    display: grid;
+    grid-area: pasekdolprawy;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.etykiety4
+{
+    display: grid;
+    grid-area: pasekdollewy;
     display: flex;
     align-items: center;
 }
