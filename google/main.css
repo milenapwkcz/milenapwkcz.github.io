@@ -55,27 +55,6 @@ img{
     justify-content: center;
 }
 
-.etykiety2
-{
-    display: grid;
-    grid-area: pasekdolnyl;
-    display: flex;
-    flex-direction: row;
-}
-
-.etykiety3
-{
-    display: grid;
-    grid-area: pasekdolnyp;
-    display: flex;
-}
-
-.etykiety4
-{
-    display: grid;
-    grid-area: pasekdolnys;
-}
-
 .pasekdolprawy
 {
     display: grid;
