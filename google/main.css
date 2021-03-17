@@ -8,11 +8,19 @@ body
     display: grid;
     grid-template-columns: 100px auto 100px;
     grid-template-rows: 10px auto 20px;
+    grid-template-areas: 
+    "pasekgora pasekgora pasekgora"
+    ". main ."
+    "pasekdol pasekdol pasekdol";
 }
 
 .centrum
 {
     display: flex;
-
+    grid-area: main;
 }
 
+img{
+    width: 300px;
+    height: 200px;
+}
