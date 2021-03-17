@@ -5,12 +5,20 @@ body
 
 .container
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 20px 800px 20px;
+    grid-template-areas: 
+    "pasekgorny pasekgorny pasekgorny"
+    ". glowna ."
+    "pasekdolnyl pasekdolnys pasekdolnyp";
 
 }
 
 .centrum
 {
+    display: grid;
+    grid-area: glowna;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -28,6 +36,8 @@ img{
 
 .pasekgora
 {
+    display: grid;
+    grid-area: pasekgorny;
     display: flex;
     justify-content: flex-end;
     background-color: rgb(50, 205, 192);
@@ -48,6 +58,8 @@ img{
 
 .etykiety2
 {
+    display: grid;
+    grid-area: pasekdolnyl;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -55,6 +67,8 @@ img{
 
 .etykiety3
 {
+    display: grid;
+    grid-area: pasekdolnyp;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -63,6 +77,8 @@ img{
 
 .etykiety4
 {
+    display: grid;
+    grid-area: pasekdolnys;
     display: flex;
     align-items: center;
     justify-content: center;
