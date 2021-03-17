@@ -24,6 +24,7 @@ body
 }
 
 img{
+    grid-area: main;
     width: 280px;
     height: 150px;
     display: flex;
@@ -46,6 +47,7 @@ img{
 
 .wyszukiwarka
 {
+    grid-area: main;
     display: flex;
     align-items: center;
 }
