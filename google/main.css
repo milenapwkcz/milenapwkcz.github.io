@@ -61,7 +61,6 @@ img{
     grid-area: pasekdolnyl;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
 }
 
 .etykiety3
@@ -69,16 +68,12 @@ img{
     display: grid;
     grid-area: pasekdolnyp;
     display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
 }
 
 .etykiety4
 {
     display: grid;
     grid-area: pasekdolnys;
-    display: flex;
-    align-items: center;
 }
 
 .pasekdolprawy
