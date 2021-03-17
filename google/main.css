@@ -3,6 +3,12 @@ body
     background-color: #fff
 }
 
+img
+{
+    width: 280px;
+    height: 150px;
+}
+
 .container
 {
     display: flex;
@@ -13,12 +19,14 @@ body
 {
     display: flex;
     justify-content: flex-end;
+    flex-direction: row;
 }
 
 .centrum
 {
     display:flex;
     justify-content: center;
+    flex-direction: column;
     grid-template-rows: 1fr 2fr;
     grid-template-areas: "input buttons";
 }
@@ -31,7 +39,7 @@ input
 .pasekdol
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
 }
 
