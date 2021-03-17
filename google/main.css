@@ -6,7 +6,7 @@ body
 .container
 {
     display: grid;
-    grid-template-columns: 100px auto 100px;
+    grid-template-columns: 150px auto 100px;
     grid-template-rows: 30px auto 20px;
     grid-template-areas: 
     "pasekgora pasekgora pasekgora"
@@ -44,3 +44,8 @@ img{
     flex-direction: row-reverse;
 }
 
+.wyszukiwarka
+{
+    display: flex;
+    align-items: center;
+}
