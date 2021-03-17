@@ -32,8 +32,12 @@ img{
 
 .pasekgora
 {
+    grid-area: pasekgora;
+    background-color: teal;
+}
+
+.elementy
+{
     display: flex;
     flex-direction: row;
-    grid-area: pasekdol;
-    background-color: teal;
 }
