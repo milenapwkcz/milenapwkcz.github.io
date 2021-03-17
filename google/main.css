@@ -59,6 +59,7 @@ img{
     grid-area: pasekdollewy;
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
 }
 
 .etykiety3
@@ -67,6 +68,7 @@ img{
     grid-area: pasekdolprawy;
     display: flex;
     flex-direction: row-reverse;
+    align-items: flex-end;
 }
 
 .etykiety4
