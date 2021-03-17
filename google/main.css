@@ -7,7 +7,7 @@ body
 {
     display: grid;
     grid-template-columns: 100px auto 100px;
-    grid-template-rows: 10px 1000px 20px;
+    grid-template-rows: 30px auto 20px;
     grid-template-areas: 
     "pasekgora pasekgora pasekgora"
     ". main ."
@@ -36,7 +36,7 @@ img{
     background-color: teal;
 }
 
-.elementy
+.etykiety
 {
     display: flex;
     flex-direction: row;
