@@ -23,6 +23,9 @@ body
 }
 
 img{
-    width: 300px;
+    width: 400px;
     height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
