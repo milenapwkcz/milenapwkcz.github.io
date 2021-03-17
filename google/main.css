@@ -5,26 +5,19 @@ body
 
 .container
 {
-    display: grid;
-    grid-template-columns: 150px auto 100px;
-    grid-template-rows: 30px 1fr 20px;
-    grid-template-areas: 
-    "pasekgora pasekgora pasekgora"
-    ". main ."
-    "pasekdollewy pasekdolsrodek pasekdolprawy";
+    display: flex;
+
 }
 
 .centrum
 {
     display: flex;
-    grid-area: main;
     justify-content: center;
     align-content: center;
     flex-direction: column;
 }
 
 img{
-    grid-area: main;
     width: 280px;
     height: 150px;
     display: flex;
@@ -35,28 +28,26 @@ img{
 
 .pasekgora
 {
-    grid-area: pasekgora;
-    background-color: yellowgreen;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(50, 205, 192);
 }
 
 .etykiety
 {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .wyszukiwarka
 {
-    display: grid;
-    grid-area: main;
     display: flex;
-    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .etykiety2
 {
-    display: grid;
-    grid-area: pasekdollewy;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -64,17 +55,15 @@ img{
 
 .etykiety3
 {
-    display: grid;
-    grid-area: pasekdolprawy;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: flex-end;
     align-items: flex-end;
 }
 
 .etykiety4
 {
-    display: grid;
-    grid-area: pasekdollewy;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
