@@ -81,10 +81,8 @@ input
     position: absolute; 
     bottom: 0;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "pasekl paseks pasekp";
+    display: flex;
+    justify-content: space-between;
     background-color: #f2f2f2;
 }
 
@@ -95,10 +93,10 @@ input
 
 .etykiety2
 {
+    text-align: left;
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
     flex-direction: row;
+    order: 1;
     color: #70757a
 }
 
@@ -110,8 +108,8 @@ input
 .etykiety4
 {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    text-align: center;
+    order: 2;
     flex-direction: row;
     color: #70757a
 }
@@ -124,8 +122,8 @@ input
 .etykiety3
 {
     display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    text-align: right;
+    order: 3;
     flex-direction: row;
     color: #70757a
 }
