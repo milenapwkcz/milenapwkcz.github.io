@@ -36,6 +36,12 @@ html, body
     padding-right: 10px;
 }
 
+.docs
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .centrum
 {
     display: grid;
@@ -48,7 +54,7 @@ html, body
             ". button .";
 }
 
-img
+.logo
 {
     width: 280px;
     height: 150px;
@@ -63,7 +69,6 @@ img
 
 input
 {
-    min-width: 300px;
     width: auto;
     max-width: 600px;
     height: 40px;
