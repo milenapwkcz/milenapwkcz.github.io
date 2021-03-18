@@ -57,9 +57,13 @@ img
     padding-bottom: 10px;
 }
 
-input
+.wyszukiwarka
 {
     grid-area: input;
+}
+
+input
+{
     width: auto;
     max-width: 600px;
     height: 40px;
