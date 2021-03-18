@@ -70,8 +70,7 @@ html, body
 
 input
 {
-    width: auto;
-    max-width: 600px;
+    width: 600px;
     height: 40px;
     border-radius: 30px;
 }
