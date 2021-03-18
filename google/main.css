@@ -6,7 +6,7 @@
     grid-template-areas: 
             "pasekg pasekg pasekg"
             ". main ."
-            "pasekdoll pasekdols pasekdolp";
+            "pasekdol pasekdol pasekdol";
 }
 
 .pasekgora
@@ -38,16 +38,23 @@ img
     height: 150px;
 }
 
-.pasekdollewy
+.pasekdolny
 {
     display: grid;
-    grid-area: pasekdoll;
+    grid-area: pasekdol;
+    background-color: cadetblue;
+}
+
+/*.pasekdollewy
+{
+    disp
 }
 
 .etykiety2
 {
     display: flex;
     flex-direction: row;
+    align-content: flex-end;
 }
 
 .pasekdolprawy
@@ -72,4 +79,4 @@ img
 {
     display: flex;
     flex-direction: row;;
-}
+}*/
