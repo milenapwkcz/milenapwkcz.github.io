@@ -84,7 +84,7 @@ img.kl2
     margin: auto;
     height: 35px;
     padding-bottom: 10px;
-    padding-right: 300px;
+    padding-right: 80px;
 }
 
 input
@@ -134,12 +134,12 @@ a
 
 .log
 {
+    padding-top: 5px;
     height: 35px;
-    width: 110px;
-    background-color: blue;
+    width: 100px;
+    background-color: #1a73e8;
     color: white;
     text-align: center;
-    font-weight: bold;
 }
 
 .pasekdolny
