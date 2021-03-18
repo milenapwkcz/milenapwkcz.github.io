@@ -43,7 +43,8 @@ html, body
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: ". logo .";
+    grid-template-areas: ". logo ."
+    ". input .";
 }
 
 img
@@ -56,6 +57,7 @@ img
 
 input
 {
+    grid-area: input;
     width: auto;
     max-width: 600px;
     height: 40px;
@@ -67,45 +69,46 @@ input
     position: absolute; 
     bottom: 0;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: flex-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "pasekl paseks pasekp";
     background-color: #f2f2f2;
 }
 
 .pasekdollewy
 {
-    display: flex;
-    justify-content: flex-start;
+    grid-area: pasekl;
 }
 
 .etykiety2
 {
     display: flex;
+    justify-content: flex-start;
     flex-direction: row;
 }
 
 .pasekdolcentrum
 {
-    display: flex;
-    justify-content: center;
+    grid-area: paseks;
 }
 
 .etykiety4
 {
     display: flex;
+    justify-content: center;
     flex-direction: row;
 }
 
 .pasekdolprawy
 {
-    display: flex;
-    justify-content: flex-end;
+    grid-area: pasekp;
 }
 
 .etykiety3
 {
     display: flex;
+    justify-content: flex-end;
     flex-direction: row;
 }
 
