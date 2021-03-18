@@ -180,6 +180,7 @@ a
     bottom: 0;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     background-color: #f2f2f2;
 }
