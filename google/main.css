@@ -87,7 +87,7 @@ img.kl1
 {
     margin: auto;
     height: 35px;
-    padding-right: 25px;
+    padding-right: 40px;
 }
 
 img.kl2
@@ -95,7 +95,7 @@ img.kl2
     margin: auto;
     height: 35px;
     padding-bottom: 50px;
-    padding-left: 400px;
+    padding-left: 250px;
 }
 
 input
@@ -125,7 +125,7 @@ input
     grid-area:button;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
     padding-bottom: 30px;
 }
@@ -194,18 +194,24 @@ a
 
 .etykiety2
 {
+    display: flex;
+    flex-direction: row;
     text-align: left;
     order: 2;
 }
 
 .etykiety4
 {
+    display: flex;
+    flex-direction: row;
     text-align: center;
     order: 1;
 }
 
 .etykiety3
 {
+    display: flex;
+    flex-direction: row;
     text-align: right;
     order: 3;
 }
