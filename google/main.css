@@ -57,6 +57,7 @@ html, body
 
 .logo
 {
+    padding-right: 50px;
     width: 280px;
     height: 150px;
     grid-area: logo;
@@ -70,7 +71,7 @@ html, body
 
 input
 {
-    width: 600px;
+    width: 500px;
     height: 40px;
     border-radius: 30px;
 }
