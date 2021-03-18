@@ -43,8 +43,10 @@ html, body
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: ". logo ."
-    ". input .";
+    grid-template-areas: 
+            ". logo ."
+            ". input ."
+            ". button .";
 }
 
 img
