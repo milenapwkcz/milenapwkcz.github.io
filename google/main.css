@@ -2,10 +2,12 @@
 {
     display: grid;
     grid-template-columns: 100px auto 100px;
-    grid-template-rows: 20px 600px 20px;
+    grid-template-rows: 20px 100px auto 100px 20px;
     grid-template-areas: 
             "pasekg pasekg pasekg"
+            ". . ."
             ". main ."
+            ". . ."
             "pasekdol pasekdol pasekdol";
 }
 
