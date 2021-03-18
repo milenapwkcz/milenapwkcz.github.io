@@ -3,6 +3,7 @@ html
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
 }
 
 .container
@@ -37,6 +38,7 @@ body
 .etykieta
 {
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 .centrum
@@ -88,7 +90,6 @@ input
 {
     display: flex;
     flex-direction: row;
-    padding-right: 10px;
 }
 
 .pasekdolcentrum
