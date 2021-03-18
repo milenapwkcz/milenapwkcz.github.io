@@ -40,10 +40,9 @@ html, body
 {
     padding-top: 20px;
     padding-bottom: 50px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
 }
 
 img
