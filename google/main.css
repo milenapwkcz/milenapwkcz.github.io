@@ -53,7 +53,8 @@ html, body
             ". . ."
             ". logo ."
             ". input ."
-            ". button .";
+            ". button ."
+            ". . .";
 }
 
 .logo
@@ -72,23 +73,27 @@ html, body
 
 input
 {
-    width: 500px;
-    height: 40px;
+    width: 450px;
+    height: 42px;
     border-radius: 30px;
+    border: 1px solid #f2f2f2;
 }
 
 .buttony
 {
     grid-area:button;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "szukaj traf";
-}
-
-button
-{
     display: flex;
     flex-direction: row;
+}
+
+.bszukaj
+{
+    padding: 10px;
+}
+
+.btraf
+{
+    padding: 10px;
 }
 
 .pasekdolny
