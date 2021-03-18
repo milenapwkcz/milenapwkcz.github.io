@@ -176,57 +176,57 @@ a
     position: absolute; 
     bottom: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
     background-color: #f2f2f2;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: auto;
+    grid-template-areas: 
+            "panstwo . ."
+            "poz poz poz";
 }
 
-.pasekdollewy
+.reszta
 {
-    grid-area: pasekl;
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #70757a
 }
 
 .etykiety2
 {
+    grid-area: poz;
     text-align: left;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     order: 2;
-    color: #70757a
-}
-
-.pasekdolcentrum
-{
-    grid-area: paseks;
 }
 
 .etykiety4
 {
+    grid-area: poz;
     display: flex;
     text-align: center;
     order: 1;
     flex-direction: row;
-    color: #70757a
-}
-
-.pasekdolprawy
-{
-    grid-area: pasekp;
+    justify-content: space-between;
 }
 
 .etykiety3
 {
+    grid-area: poz;
     display: flex;
     text-align: right;
-    order: 2;
+    order: 3;
     flex-direction: row;
-    color: #70757a
+    justify-content: space-between;
 }
 
 .panstwo
 {
-    padding: 13px 30px;
+    grid-area: panstwo;
     border-bottom: 1px solid #dadce0;
     font-size: 15px;
     color: #70757a
