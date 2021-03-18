@@ -219,10 +219,17 @@ a
 {
     display: flex;
     text-align: right;
-    order: 3;
+    order: 2;
     flex-direction: row;
     color: #70757a
 }
 
+.panstwo
+{
+    padding: 13px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a
+}
 
 
