@@ -44,7 +44,7 @@ img
     grid-area: pasekdol;
     grid-template-columns: 1fr 2fr 3fr;
     grid-template-areas: "lewy srodek prawy";
-    background-color: blanchedalmond;
+    background-color: rgb(46, 170, 153);
 }
 
 .etykiety2
