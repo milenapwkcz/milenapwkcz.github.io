@@ -113,7 +113,7 @@ button
     font-family: arial,sans-serif;
     font-size: 14px;
     height: 25px;
-    min-width: 54px;
+    width: 54px;
     text-align: center;
     padding-right: 20px;
 }
@@ -121,7 +121,7 @@ button
 .log
 {
     height: 25px;
-    min-width: 54px;
+    width: 54px;
     background-color: blue;
     color: white;
     text-align: center;
