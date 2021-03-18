@@ -118,6 +118,14 @@ button
     padding-right: 20px;
 }
 
+.log
+{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-style: oblique;
+}
+
 .pasekdolny
 {
     position: absolute; 
