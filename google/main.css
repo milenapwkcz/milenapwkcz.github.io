@@ -18,7 +18,7 @@ img
 {
     display: flex;
     justify-content: flex-end;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .centrum
@@ -39,7 +39,7 @@ input
 .pasekdol
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
