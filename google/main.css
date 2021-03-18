@@ -2,7 +2,7 @@
 {
     display: grid;
     grid-template-columns: 50% auto 50%;
-    grid-template-rows: 20% 300px auto 300px 20%;
+    grid-template-rows: 5% 300px auto 300px 5%;
     grid-template-areas: 
             "pasekg pasekg pasekg"
             ". . ."
