@@ -42,7 +42,7 @@ img
 {
     display: grid;
     grid-area: pasekdol;
-    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "lewy srodek prawy";
     background-color: rgb(46, 170, 153);
 }
