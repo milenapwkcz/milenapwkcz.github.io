@@ -60,7 +60,7 @@ html, body
 
 .logo
 {
-    padding-right: 50px;
+    padding-left: 200px;
     width: 280px;
     height: 150px;
     grid-area: logo;
