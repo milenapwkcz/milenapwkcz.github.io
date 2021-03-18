@@ -120,6 +120,8 @@ button
 
 .log
 {
+    height: 25px;
+    min-width: 54px;
     background-color: blue;
     color: white;
     text-align: center;
