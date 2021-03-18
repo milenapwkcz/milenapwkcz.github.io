@@ -75,6 +75,20 @@ input
     border-radius: 30px;
 }
 
+.buttony
+{
+    grid-area:button;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "szukaj traf";
+}
+
+button
+{
+    display: flex;
+    flex-direction: row;
+}
+
 .pasekdolny
 {
     position: absolute; 
