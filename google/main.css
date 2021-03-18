@@ -60,7 +60,7 @@ html, body
 
 .logo
 {
-    padding-left: 150px;
+    padding-left: 120px;
     width: 280px;
     height: 150px;
     grid-area: logo;
@@ -80,14 +80,13 @@ html, body
     z-index: 3;
     height: 40px;
     margin: 0 auto;
-    padding-top: 6px;
 }
 
 img.kl1
 {
     margin: auto;
     height: 35px;
-    padding-right: 60px;
+    padding-right: 90px;
 }
 
 img.kl2
@@ -95,7 +94,7 @@ img.kl2
     margin: auto;
     height: 35px;
     padding-bottom: 50px;
-    padding-left: 200px;
+    padding-left: 180px;
 }
 
 input
