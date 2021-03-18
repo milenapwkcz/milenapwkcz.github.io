@@ -186,14 +186,17 @@ a
 
 .reszta
 {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: bokl sr bokp;
     color: #70757a
 }
 
 
 .etykiety2
 {
+    grid-area: bokl;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -203,6 +206,7 @@ a
 
 .etykiety4
 {
+    grid-area: sr;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -212,6 +216,7 @@ a
 
 .etykiety3
 {
+    grid-area: bokp;
     display: flex;
     flex-direction: row;
     text-align: right;
