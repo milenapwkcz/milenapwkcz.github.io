@@ -87,7 +87,7 @@ img.kl1
 {
     margin: auto;
     height: 35px;
-    padding-right: 10px;
+    padding-right: 13px;
 }
 
 img.kl2
@@ -95,7 +95,7 @@ img.kl2
     margin: auto;
     height: 35px;
     padding-bottom: 50px;
-    padding-left: 300px;
+    padding-left: 280px;
 }
 
 input
@@ -142,7 +142,7 @@ button
     text-align: center;
     padding-right: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 
@@ -183,7 +183,7 @@ a
 .reszta
 {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     color: #70757a
 }
 
@@ -191,32 +191,29 @@ a
 .etykiety2
 {
     text-align: left;
-    display: flex;
-    justify-content: space-between;
     order: 2;
 }
 
 .etykiety4
 {
-    display: flex;
     text-align: center;
     order: 1;
-    justify-content: space-between;
 }
 
 .etykiety3
 {
-    display: flex;
     text-align: right;
     order: 3;
-    justify-content: space-between;
 }
 
 .panstwo
 {
     border-bottom: 1px solid #dadce0;
     font-size: 15px;
-    color: #70757a
+    color: #70757a;
+    padding-bottom: 5px;
+    padding-top:5px;
+    padding-left: 5px
 }
 
 
