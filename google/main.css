@@ -87,6 +87,7 @@ input
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
+    color: #70757a
 }
 
 .pasekdolcentrum
@@ -99,6 +100,7 @@ input
     display: flex;
     justify-content: center;
     flex-direction: row;
+    color: #70757a
 }
 
 .pasekdolprawy
@@ -111,6 +113,7 @@ input
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
+    color: #70757a
 }
 
 
