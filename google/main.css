@@ -87,6 +87,7 @@ img.kl1
     margin: auto;
     height: 35px;
     padding-right: 100px;
+    border-radius: 25px;
 }
 
 img.kl2
@@ -95,6 +96,7 @@ img.kl2
     height: 35px;
     padding-bottom: 45px;
     padding-left: 160px;
+    border-radius: 25px;
 }
 
 input
