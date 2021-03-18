@@ -2,7 +2,7 @@
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5% 1fr 1fr 1fr 5%;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
     grid-template-areas: 
             "pasekg pasekg pasekg"
             ". . ."
@@ -15,7 +15,7 @@
 {
     display: grid;
     grid-area: pasekg;
-    background-color: rgb(222, 135, 183);
+    background-color: rgb(135, 222, 174);
 }
 
 .etykiety
