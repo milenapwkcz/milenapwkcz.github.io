@@ -1,7 +1,7 @@
 .container
 {
     display: grid;
-    grid-template-columns: 50% auto 50%;
+    grid-template-columns: 40% auto 40%;
     grid-template-rows: 5% 300px auto 300px 5%;
     grid-template-areas: 
             "pasekg pasekg pasekg"
