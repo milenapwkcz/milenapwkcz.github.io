@@ -38,6 +38,7 @@ body
     display: flex;
     align-content: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 img
@@ -61,9 +62,9 @@ input
 .pasekdolny
 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
     align-content: flex-end;
     background-color: #f2f2f2;
 }
+
 
