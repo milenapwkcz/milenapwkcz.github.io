@@ -60,11 +60,11 @@ html, body
 
 .logo
 {
-    padding-left: 200px;
+    padding-left: 150px;
     width: 280px;
     height: 150px;
     grid-area: logo;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .wyszukiwarka
@@ -121,11 +121,11 @@ input
 
 .buttony
 {
-    padding-top: 20px;
+    padding-top: 30px;
     grid-area:button;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
 }
 
@@ -185,6 +185,7 @@ a
 .reszta
 {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     color: #70757a
 }
