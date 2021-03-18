@@ -1,122 +1,48 @@
-.container
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 4fr 2fr 1fr;
-    grid-template-areas: 
-            "pasekg pasekg pasekg"
-            ". . ."
-            ". main ."
-            ". . ."
-            "pasekdol pasekdol pasekdol";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-.pasekgora
-{
-    display: grid;
-    grid-area: pasekg;
-    display: flex;
-    align-content: flex-start;
-    background-color: rgb(135, 222, 174);
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-.etykiety
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+body {
+	line-height: 1;
 }
-
-.centrum 
-{
-    display: grid;
-    grid-area: main;
+ol, ul {
+	list-style: none;
 }
-
-img
-{
-    display: flex;
-    width: 280px;
-    height: 150px;
+blockquote, q {
+	quotes: none;
 }
-
-.pasekdolny
-{
-    display: grid;
-    grid-area: pasekdol;
-    display: flex;
-    align-content: flex-end;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "lewy srodek prawy";
-    background-color: rgb(46, 85, 170);
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-
-.etykiety2
-{
-    display: grid;
-    grid-area: lewy;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-
-.etykiety3
-{
-    display:grid;
-    grid-area: prawy;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.etykiety4
-{
-    display: grid;
-    grid-area: srodek;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-input
-{
-    width: 280px;
-    height: 50px;
-}
-
-/*.pasekdollewy
-{
-    disp
-}
-
-.etykiety2
-{
-    display: flex;
-    flex-direction: row;
-    align-content: flex-end;
-}
-
-.pasekdolprawy
-{
-    display: grid;
-    grid-area: pasekdolp;
-}
-
-.etykiety3
-{
-    display: flex;
-    flex-direction: row;
-}
-
-.pasekdolcentrum
-{
-    display: grid;
-    grid-area: pasekdols;
-}
-
-.etykiety4
-{
-    display: flex;
-    flex-direction: row;;
-}*/
