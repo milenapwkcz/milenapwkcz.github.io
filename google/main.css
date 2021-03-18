@@ -23,8 +23,7 @@ img
 {
     display: flex;
     display: grid;
-    justify-content: flex-end;
-    flex-direction: column;
+    flex-direction: row-reverse;
     grid-area: pasekg;
 }
 
@@ -48,7 +47,7 @@ input
 .pasekdol
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
 }
 
