@@ -96,6 +96,7 @@ input
 {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     flex-direction: row;
     color: #70757a
 }
@@ -109,6 +110,7 @@ input
 {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     flex-direction: row;
     color: #70757a
 }
@@ -122,6 +124,7 @@ input
 {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     flex-direction: row;
     color: #70757a
 }
