@@ -86,20 +86,19 @@ img.kl1
 {
     margin: auto;
     height: 35px;
-    padding-right: 90px;
+    padding-right: 100px;
 }
 
 img.kl2
 {
     margin: auto;
     height: 35px;
-    padding-bottom: 50px;
-    padding-left: 180px;
+    padding-bottom: 45px;
+    padding-left: 160px;
 }
 
 input
 {
-    padding-right: 10px;
     width: 400px;
     background-color: transparent;
     margin: 0;
