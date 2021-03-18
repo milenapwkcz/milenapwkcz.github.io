@@ -26,6 +26,7 @@ html, body
 
 .etykiety
 {
+    font-size: 10px;
     display: flex;
     flex-direction: row-reverse;
 }
