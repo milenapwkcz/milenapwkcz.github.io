@@ -11,7 +11,6 @@ img
 
 .container
 {
-    display: flex;
     display: grid;
     grid-template-columns: 100px auto 100px;
     grid-template-rows: 20px 600px 20px;
@@ -51,5 +50,23 @@ input
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.pasekdolprawy
+{
+    display: grid;
+    grid-area: pasekdp;
+}
+
+.pasekdollewy
+{
+    display: grid;
+    grid-area: pasekdl;
+}
+
+.pasekdolcentrum
+{
+    display: grid;
+    grid-area: pasekdols;
 }
 
