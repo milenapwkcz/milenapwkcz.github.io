@@ -62,9 +62,9 @@ img
 
 input
 {
-    width: auto;
-    max-width: 600px;
-    height: 40px;
+    width: 600px;
+    height: 60px;
+    border-radius: 5px;
 }
 
 .pasekdolny
