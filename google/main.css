@@ -38,8 +38,6 @@ html, body
 
 .centrum
 {
-    padding-top: 20px;
-    padding-bottom: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
