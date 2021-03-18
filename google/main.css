@@ -1,8 +1,8 @@
 .container
 {
     display: grid;
-    grid-template-columns: 100px auto 100px;
-    grid-template-rows: 20px 300px auto 300px 20px;
+    grid-template-columns: 500px auto 500px;
+    grid-template-rows: 20px 300px auto 300px 50px;
     grid-template-areas: 
             "pasekg pasekg pasekg"
             ". . ."
@@ -53,6 +53,7 @@ img
     grid-area: lewy;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
 }
 
@@ -62,6 +63,7 @@ img
     grid-area: prawy;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .etykiety4
@@ -70,6 +72,7 @@ img
     grid-area: srodek;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 /*.pasekdollewy
