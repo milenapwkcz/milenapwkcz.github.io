@@ -167,11 +167,11 @@ a
 {
     padding-top: 5px;
     height: 35px;
-    line-height: 35px;
+    line-height: 30px;
     width: 100px;
     background-color: #1a73e8;
     color: white;
-    text-align:justify;
+    text-align:center;
 }
 
 .pasekdolny
