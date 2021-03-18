@@ -1,20 +1,15 @@
-html
+.container
+{
+    min-height: 100%;
+    position: relative;
+}
+
+html, body
 {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-}
-
-.container
-{
-    min-height: 100%;
-    position: relative;
-    border: 0;
-}
-
-body
-{
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
