@@ -32,7 +32,8 @@ html, body
 
 .etykieta
 {
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .centrum
@@ -95,7 +96,6 @@ input
 {
     display: flex;
     flex-direction: row;
-    padding-right: 10px;
 }
 
 .pasekdolprawy
@@ -108,7 +108,6 @@ input
 {
     display: flex;
     flex-direction: row;
-    padding-right: 10px;
 }
 
 
