@@ -101,6 +101,7 @@ input
     grid-area:button;
     display: flex;
     flex-direction: row;
+    padding-right: 20px;
 }
 
 button
@@ -114,7 +115,7 @@ button
     height: 25px;
     min-width: 54px;
     text-align: center;
-    padding: 20px;
+    padding-right: 20px;
 }
 
 .pasekdolny
@@ -124,6 +125,7 @@ button
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     background-color: #f2f2f2;
 }
 
@@ -137,7 +139,6 @@ button
     text-align: left;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     order: 1;
     color: #70757a
 }
@@ -151,7 +152,6 @@ button
 {
     display: flex;
     text-align: center;
-    flex-wrap: wrap;
     order: 2;
     flex-direction: row;
     color: #70757a
@@ -166,7 +166,6 @@ button
 {
     display: flex;
     text-align: right;
-    flex-wrap: wrap;
     order: 3;
     flex-direction: row;
     color: #70757a
