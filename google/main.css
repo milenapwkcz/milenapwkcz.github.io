@@ -45,6 +45,24 @@ img
     background-color: cadetblue;
 }
 
+.etykiety2
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.etykiety3
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.etykiety4
+{
+    display: flex;
+    flex-direction: row;
+}
+
 /*.pasekdollewy
 {
     disp
