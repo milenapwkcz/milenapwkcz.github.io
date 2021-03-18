@@ -124,6 +124,7 @@ button
     text-align: left;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     order: 1;
     color: #70757a
 }
@@ -137,6 +138,7 @@ button
 {
     display: flex;
     text-align: center;
+    flex-wrap: wrap;
     order: 2;
     flex-direction: row;
     color: #70757a
@@ -151,6 +153,7 @@ button
 {
     display: flex;
     text-align: right;
+    flex-wrap: wrap;
     order: 3;
     flex-direction: row;
     color: #70757a
