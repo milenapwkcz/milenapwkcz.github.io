@@ -2,7 +2,7 @@
 {
     display: grid;
     grid-template-columns: 100px auto 100px;
-    grid-template-rows: 20px 100px auto 100px 20px;
+    grid-template-rows: 20px 300px auto 300px 20px;
     grid-template-areas: 
             "pasekg pasekg pasekg"
             ". . ."
@@ -51,18 +51,25 @@ img
 {
     display: grid;
     grid-area: lewy;
+    display: flex;
+    flex-direction: row;
+
 }
 
 .etykiety3
 {
     display:grid;
     grid-area: prawy;
+    display: flex;
+    flex-direction: row;
 }
 
 .etykiety4
 {
     display: grid;
     grid-area: srodek;
+    display: flex;
+    flex-direction: row;
 }
 
 /*.pasekdollewy
