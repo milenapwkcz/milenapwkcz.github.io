@@ -127,6 +127,7 @@ input
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
+    padding-bottom: 30px;
 }
 
 button
