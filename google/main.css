@@ -148,7 +148,7 @@ button
     padding-left: 20px;
     display: flex;
     flex-direction: row;
-    margin: 30px;
+    margin: 15px;
 }
 
 .jezyk
@@ -167,6 +167,7 @@ a
 
 .log
 {
+    margin: 0;
     padding-top: 5px;
     height: 35px;
     line-height: 20px;
