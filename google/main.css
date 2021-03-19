@@ -180,48 +180,36 @@ a
     bottom: 0;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-between;
     background-color: #f2f2f2;
 }
 
 .reszta
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: bokl sr bokp;
+    
     color: #70757a
 }
 
 
 .etykiety2
 {
-    grid-area: bokl;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    text-align: left;
+    min-width: 30%;
+    text-align: center;
     order: 2;
 }
 
 .etykiety4
 {
-    grid-area: sr;
-    display: flex;
-    flex-direction: row;
+    width: 100%;
     justify-content: center;
-    text-align: center;
     order: 1;
 }
 
 .etykiety3
 {
-    grid-area: bokp;
-    display: flex;
-    flex-direction: row;
-    text-align: right;
-    justify-content: flex-end;
+    min-width: 30%;
+    text-align: center;
     order: 3;
 }
 
