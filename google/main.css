@@ -101,7 +101,8 @@ img.kl2
 
 input
 {
-    width: 400px;
+    padding-left: 300px;
+    width: 600px;
     background-color: transparent;
     margin: 0;
     border: none;
