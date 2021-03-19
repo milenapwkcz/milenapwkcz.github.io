@@ -142,7 +142,7 @@ button
     font-size: 14px;
     height: 35px;
     line-height: 35px;
-    width: 120px;
+    width: 150px;
     text-align: center;
     padding-right: 20px;
     padding-left: 20px;
@@ -226,8 +226,8 @@ a
     border-bottom: 1px solid #dadce0;
     font-size: 15px;
     color: #70757a;
-    padding-bottom: 5px;
-    padding-top:5px;
+    padding-bottom: 30px;
+    padding-top:30px;
     padding-left: 10px
 }
 
