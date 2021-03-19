@@ -35,6 +35,16 @@ html, body
 {
     padding-left: 10px;
     padding-right: 10px;
+    text-decoration: none;
+    color: #70757a;
+}
+
+.etykietab
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
 }
 
 .docs
