@@ -127,7 +127,7 @@ input
     grid-area:button;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: center;
     padding-bottom: 30px;
 }
@@ -145,6 +145,7 @@ button
     width: 150px;
     text-align: center;
     padding-right: 20px;
+    padding-left: 20px;
     display: flex;
     justify-content: space-around;
     
@@ -189,7 +190,7 @@ a
 .reszta
 {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     color: #70757a;
 }
@@ -197,29 +198,21 @@ a
 
 .etykiety2
 {
+    text-align: left;
     min-width: 30%;
-    text-align: center;
     order: 1;
-    display: flex;
-    flex-direction: row;
 }
 
 .etykiety4
 {
-    width: 100%;
-    justify-content: center;
-    order: 0;
-    display: flex;
-    flex-direction: row;
+    order: 2;
 }
 
 .etykiety3
 {
     min-width: 30%;
     text-align: right;
-    order: 2;
-    display: flex;
-    flex-direction: row;
+    order: 3;
 }
 
 .panstwo
