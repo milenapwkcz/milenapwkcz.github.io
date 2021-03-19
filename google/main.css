@@ -127,7 +127,6 @@ input
     grid-area:button;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-content: center;
     padding-bottom: 30px;
 }
