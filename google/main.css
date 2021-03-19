@@ -101,7 +101,7 @@ img.kl2
 
 input
 {
-    padding-right: 300px;
+    padding-right: 1000px;
     width: 1200px;
     background-color: transparent;
     margin: 0;
@@ -148,7 +148,7 @@ button
     padding-left: 20px;
     display: flex;
     flex-direction: row;
-    
+    margin: 10px;
 }
 
 .jezyk
@@ -226,9 +226,9 @@ a
     border-bottom: 1px solid #dadce0;
     font-size: 15px;
     color: #70757a;
-    padding-bottom: 30px;
-    padding-top:30px;
-    padding-left: 10px
+    padding-bottom: 20px;
+    padding-top:20px;
+    padding-right: 10px
 }
 
 .listek
