@@ -168,7 +168,7 @@ a
     padding-top: 5px;
     height: 35px;
     line-height: 15px;
-    width: 80px;
+    width: 100px;
     background-color: #1a73e8;
     color: white;
     text-align:center;
@@ -187,7 +187,8 @@ a
 
 .reszta
 {
-    
+    display: flex;
+    flex-direction: row;
     color: #70757a
 }
 
