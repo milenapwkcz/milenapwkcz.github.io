@@ -189,10 +189,9 @@ a
 .reszta
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     color: #70757a;
-    flex-wrap: wrap;
 }
 
 
