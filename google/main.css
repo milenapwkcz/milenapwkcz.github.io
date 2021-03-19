@@ -95,13 +95,14 @@ img.kl2
 {
     margin: auto;
     height: 32px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     padding-left: 60px;
     border-radius: 25px;
 }
 
 input
 {
+    padding-left: 300px;
     width: 500px;
     background-color: transparent;
     margin: 0;
