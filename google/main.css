@@ -203,6 +203,7 @@ a
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: center;
     align-items: center;
     color: #70757a;
     text-align: center;
