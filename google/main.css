@@ -193,9 +193,12 @@ a
     bottom: 0;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
     justify-content: space-between;
     background-color: #f2f2f2;
+    flex-direction: column;
 }
 
 .reszta
@@ -215,6 +218,8 @@ a
     text-align: left;
     min-width: 30%;
     order: 2;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .etykiety4
@@ -222,15 +227,19 @@ a
     order: 1;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
 .etykiety3
 {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     min-width: 30%;
     text-align: right;
     order: 3;
+    justify-content: space-between;
 }
 
 .panstwo
