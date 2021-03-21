@@ -49,7 +49,7 @@ html, body
 
 .docs
 {
-    padding-top: 7px;
+    padding-top: 3px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -257,6 +257,7 @@ a.g
 
 a.d
 {
+    font-size: 14px;
     color: #70757a;
     text-decoration: none;
 }
