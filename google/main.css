@@ -269,3 +269,35 @@ a.d
     color: #70757a;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 1200px)
+{
+    .reszta
+    {
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .etykiety4 
+    {
+        order: 1;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .etykiety2
+    {
+        order: 2;
+        text-align: center;
+        min-width: 30%;
+    }
+
+    
+
+    .etykiety3
+    {
+        order: 3;
+        text-align: center;
+        min-width: 30%;
+    }
+}
