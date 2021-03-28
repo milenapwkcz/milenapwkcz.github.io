@@ -20,31 +20,35 @@ html, body
 
 .pasekgora
 {
-    padding: 15px;
-    background-color: rgb(255, 255, 255);
+    display: none;
+    /*padding: 15px;
+    background-color: rgb(255, 255, 255);*/
 }
 
 .etykiety
 {
-    font-size: 13px;
+    display: none;
+    /*font-size: 13px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse;*/
 }
 
 .etykieta
 {
-    padding-left: 10px;
+    display: none;
+    /*padding-left: 10px;
     padding-right: 10px;
     text-decoration: none;
-    color: #70757a;
+    color: #70757a;*/
 }
 
 .etykietab
 {
-    padding-left: 10px;
+    display: none;
+    /*padding-left: 10px;
     padding-right: 10px;
     text-decoration: none;
-    color: black;
+    color: black;*/
 }
 
 .docs
@@ -57,7 +61,7 @@ html, body
 {
     padding-top: 50px;
     padding-left: 70px;
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
@@ -65,15 +69,15 @@ html, body
             ". logo ."
             ". input ."
             ". button ."
-            ". jezyk .";
+            ". jezyk .";*/
 }
 
 .logo
 {
-    padding-left: 120px;
-    width: 280px;
-    height: 150px;
-    grid-area: logo;
+    /*padding-left: 120px;*/
+    width: 20px;
+    height: 20px;
+    /*grid-area: logo;*/
 }
 
 .wyszukiwarka
@@ -94,18 +98,19 @@ html, body
 
 img.kl1
 {
-    margin: auto;
+    display: none;
+    /*margin: auto;
     height: 35px;
     padding-right: 20px;
-    border-radius: 25px;
+    border-radius: 25px;*/
 }
 
 img.kl2
 {
     margin: auto;
+    border-left: 1px solid #dadce0;
     height: 32px;
-    padding-left: 25px;
-    border-radius: 25px;
+    padding-left: 20px;
 }
 
 input
@@ -132,13 +137,14 @@ input
 
 .buttony
 {
-    padding-top: 30px;
+    display: none;
+    /*padding-top: 30px;
     grid-area:button;
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    padding-bottom: 30px;
+    padding-bottom: 30px;*/
 }
 
 button
@@ -162,9 +168,10 @@ button
 
 .jezyk
 {
-    font-size: 13px;
+    display: none;
+    /*font-size: 13px;
     grid-area: jezyk;
-    text-align: center;
+    text-align: center;*/
 }
 
 a
@@ -199,45 +206,49 @@ a
 
 .reszta
 {
-    display: flex;
+    display: none;
+    /*display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
     align-items: center;
     color: #70757a;
-    text-align: center;
+    text-align: center;*/
 }
 
 
 .etykiety2
 {
-    display: flex;
+    display: none;
+    /*display: flex;
     flex-direction: row;
     text-align: left;
     min-width: 30%;
     order: 1;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between;*/
 }
 
 .etykiety4
 {
-    order: 2;
+    display: none;
+    /*order: 2;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap;*/
 
 }
 
 .etykiety3
 {
-    flex-wrap: wrap;
+    display: none;
+    /*flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     min-width: 30%;
     text-align: right;
     order: 3;
-    justify-content: space-between;
+    justify-content: space-between;*/
 }
 
 .panstwo
@@ -252,33 +263,37 @@ a
 
 .listek
 {
-    padding-left: 5px;
-    padding-top: 3px;
+    display: none;
+    /*padding-left: 5px;
+    padding-top: 3px;*/
 }
 
 a.g
 {
-    color: black;
-    text-decoration: none;
+    display: none;
+    /*color: black;
+    text-decoration: none;*/
 }
 
 a.d
 {
-    font-size: 14px;
+    display: none;
+    /*font-size: 14px;
     color: #70757a;
     text-decoration: none;
-    display: inline-block;
+    display: inline-block;*/
 }
 
 @media only screen and (max-width: 900px)
 {
     .reszta
     {
-        justify-content: space-evenly;
-        text-align: center;
+        display: none;
+        /*justify-content: space-evenly;
+        text-align: center;*/
     }
 
-    .etykiety4 
+    /*.etykiety4 
     {
         order: 1;
         justify-content: center;
@@ -298,5 +313,5 @@ a.d
         order: 3;
         text-align: center;
         min-width: 30%;
-    }
+    }*/
 }
