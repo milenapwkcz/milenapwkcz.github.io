@@ -42,6 +42,7 @@
 
 .results .podinputem
 {
+	all: initial;
 	grid-area: etykiety;
 	border-bottom: 1px solid #dadce0;
 }
@@ -55,6 +56,7 @@
 
 .results a.ilewynikow
 {
+	all: initial;
 	padding-top: 10px;
 	grid-area: wyniki;
 	font-size: 14px;
@@ -195,6 +197,7 @@
 
 .results .podpanstwem
 {
+	all:initial;
 	padding-top: 5px;
 	padding-left: 195px;
 	padding-bottom: 5px;
@@ -295,9 +298,13 @@
 .results .logo
 {
 	all: initial;
-	width: 20px;
-    height: 20px;
-	padding-right: 150px;
+	padding-right: 30px;
+}
+
+.results .logogoogle
+{
+	width: 150px;
+	height: 50px;
 }
 
 
