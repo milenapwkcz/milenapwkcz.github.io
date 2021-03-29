@@ -164,23 +164,31 @@ a.naglowek
 	padding-left: 100px;
 }
 
-.results .liczbaa
+a.liczbaa
 {
 	color: black;
 	padding-right: 10px;
 	font-weight: bold;
+	text-decoration: none;
+	font-size: 14px;
 }
 
-.results .liczba
+a.liczba
 {
 	color:rgb(80, 80, 255);
 	padding-right: 10px;
+	text-decoration: none;
+	font-size: 14px;
+
 }
 
-.results .nastepna
+a.nastepna
 {
 	color:rgb(80, 80, 255);
-	padding-left: 50px;
+	padding-left: 65px;
+	text-decoration: none;
+	font-size: 14px;
+
 }
 
 .results .podpanstwem
