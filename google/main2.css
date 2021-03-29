@@ -22,9 +22,11 @@
 
 .results .centrum
 {
+	all: initial;
 	display: flex;
 	flex-direction: row;
 	padding-left: 30px;
+	padding-top: 50px;
 }
 
 .results .pasekgora
@@ -51,7 +53,7 @@
 	flex-direction: row;
 }
 
-a.ilewynikow
+.results a.ilewynikow
 {
 	padding-top: 10px;
 	grid-area: wyniki;
@@ -68,34 +70,34 @@ a.ilewynikow
 	flex-direction: column;
 }
 
-.wynik
+.results .wynik
 {
 	display: flex;
 	flex-direction: column;
 	padding-bottom: 30px;
 }
 
-.adres
+.results .adres
 {
 	display: flex;
 	flex-direction: row;
 	padding-bottom: 5px;
 }
 
-.link
+.results .link
 {
 	font-size: 14px;
 	color: black;
 	padding-right: 5px;
 }
 
-.corb
+.results .corb
 {
 	font-size: 14px;
 	color: #70757a;
 }
 
-a.naglowek
+.results a.naglowek
 {
 	font-size: 20px;
 	text-decoration: none;
@@ -103,7 +105,7 @@ a.naglowek
 	padding-bottom: 3px;
 }
 
-.opis
+.results .opis
 {
 	font-size: 14px;
 	color: #70757a;
@@ -158,13 +160,13 @@ a.naglowek
 	flex-direction: row;
 }
 
-.gooogle
+.results .gooogle
 {
 	padding-top: 30px;
 	padding-left: 100px;
 }
 
-a.liczbaa
+.results a.liczbaa
 {
 	color: black;
 	padding-right: 10px;
@@ -173,7 +175,7 @@ a.liczbaa
 	font-size: 14px;
 }
 
-a.liczba
+.results a.liczba
 {
 	color:rgb(80, 80, 255);
 	padding-right: 10px;
@@ -182,7 +184,7 @@ a.liczba
 
 }
 
-a.nastepna
+.results a.nastepna
 {
 	color:rgb(80, 80, 255);
 	padding-left: 65px;
@@ -210,16 +212,91 @@ a.nastepna
 	padding-left: 210px;
 }
 
-svg
+.results svg
 {
 	padding-top: 4px;
 	padding-right: 5px;
 	color: #70757a;
 }
 
-.etykieta
+.results .etykieta
 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
+
+/*reset z poprzedniego*/
+
+.results .etykietab
+{
+	display: none;
+}
+
+.results img.kl1
+{
+	display: none;
+}
+
+.results .buttony
+{
+	display: none;
+}
+
+.results .jezyk
+{
+	display: none;
+}
+
+.results .reszta
+{
+	display: none;
+}
+
+.results .etykiety2
+{
+	display: none;
+}
+
+.results .etykiety4
+{
+	display: none;
+}
+
+.results .etykiety3
+{
+	display: none;
+}
+
+.results .listek
+{
+	display: none;
+}
+
+.results a.g
+{
+	display: none;
+}
+
+.results body, .results html
+{
+	all: initial;
+	margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.results .logo
+{
+	all: initial;
+	width: 20px;
+    height: 20px;
+	padding-right: 150px;
+}
+
