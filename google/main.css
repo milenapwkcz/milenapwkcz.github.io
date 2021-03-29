@@ -15,7 +15,7 @@ html, body
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 
 .pasekgora
@@ -26,18 +26,17 @@ html, body
 
 .etykiety
 {
-    /*font-size: 13px;
+    font-size: 13px;
     display: flex;
-    flex-direction: row-reverse;*/
+    flex-direction: row-reverse;
 }
 
 .etykieta
 {
-    display: none;
-    /*padding-left: 10px;
+    padding-left: 10px;
     padding-right: 10px;
     text-decoration: none;
-    color: #70757a;*/
+    color: #70757a;
 }
 
 .etykietab
@@ -58,7 +57,7 @@ html, body
 .centrum
 {
     padding-top: 50px;
-    padding-left: 70px;
+    /*padding-left: 70px;*/
     /*display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -76,7 +75,6 @@ html, body
     width: 20px;
     height: 20px;
     /*grid-area: logo;*/
-    padding-right: 100px;
 }
 
 .wyszukiwarka
@@ -109,7 +107,7 @@ img.kl2
     margin: auto;
     border-left: 1px solid #dadce0;
     height: 32px;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 input
@@ -276,11 +274,10 @@ a.g
 
 a.d
 {
-    display: none;
-    /*font-size: 14px;
+    font-size: 15px;
     color: #70757a;
     text-decoration: none;
-    display: inline-block;*/
+    display: inline-block;
 }
 
 @media only screen and (max-width: 900px)
