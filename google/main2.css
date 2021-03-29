@@ -11,7 +11,7 @@
             "logo input guzik"
             "etykiety etykiety etykiety"
             ". wyniki wyniki"
-            ". info info";
+            ". wyniki wyniki";
 }
 
 .results .logo
@@ -51,11 +51,60 @@
 	flex-direction: row;
 }
 
-a.wynik
+a.ilewynikow
 {
 	padding-top: 10px;
 	grid-area: wyniki;
 	font-size: 14px;
 	text-decoration: none;
+	color: #70757a;
+}
+
+.results .wyniki
+{
+	padding-top: 50px;
+	grid-area: wyniki;
+	display: flex;
+	flex-direction: column;
+}
+
+.wynik
+{
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 10px;
+}
+
+.adres
+{
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 5px;
+}
+
+.link
+{
+	font-size: 14px;
+	color: black;
+	padding-right: 5px;
+}
+
+.corb
+{
+	font-size: 14px;
+	color: #70757a;
+}
+
+a.naglowek
+{
+	font-size: 20px;
+	text-decoration: none;
+	color: rgb(18, 18, 168);
+	padding-bottom: 3px;
+}
+
+.opis
+{
+	font-size: 14px;
 	color: #70757a;
 }
