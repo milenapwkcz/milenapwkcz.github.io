@@ -203,3 +203,17 @@ a.naglowek
 {
 	padding-left: 210px;
 }
+
+svg
+{
+	padding-top: 4px;
+	padding-right: 5px;
+	color: #70757a;
+}
+
+.etykieta
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
