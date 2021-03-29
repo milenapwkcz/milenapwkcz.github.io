@@ -6,7 +6,7 @@
 	max-width: 100%;
 	display: grid;
 	grid-template-columns: 210px auto;
-	grid-template-rows: 110px 30px 900px 1fr;
+	grid-template-rows: 110px 30px 980px 1fr;
 	grid-template-areas: 
             "logo input guzik"
             "etykiety etykiety etykiety"
@@ -149,4 +149,56 @@ a.naglowek
 .results .podobnywynik
 {
 	padding: 3px;
+}
+
+.results .liczby
+{
+	padding-left: 132px;
+	display: flex;
+	flex-direction: row;
+}
+
+.gooogle
+{
+	padding-top: 30px;
+	padding-left: 100px;
+}
+
+.results .liczbaa
+{
+	color: black;
+	padding-right: 10px;
+	font-weight: bold;
+}
+
+.results .liczba
+{
+	color:rgb(80, 80, 255);
+	padding-right: 10px;
+}
+
+.results .nastepna
+{
+	color:rgb(80, 80, 255);
+	padding-left: 50px;
+}
+
+.results .podpanstwem
+{
+	padding-top: 5px;
+	padding-left: 200px;
+	display: flex;
+	flex-direction: row;
+}
+
+.results .etykietyd
+{
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+.results .panstwo
+{
+	padding-left: 210px;
 }
