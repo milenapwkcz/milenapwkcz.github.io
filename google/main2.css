@@ -6,12 +6,12 @@
 	max-width: 100%;
 	display: grid;
 	grid-template-columns: 210px auto;
-	grid-template-rows: 110px 30px 40px 1fr;
+	grid-template-rows: 110px 30px 900px 1fr;
 	grid-template-areas: 
             "logo input guzik"
             "etykiety etykiety etykiety"
             ". wyniki wyniki"
-            ". wyniki wyniki";
+            "pasekd pasekd pasekd";
 }
 
 .results .logo
@@ -72,7 +72,7 @@ a.ilewynikow
 {
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 10px;
+	padding-bottom: 30px;
 }
 
 .adres
@@ -107,4 +107,46 @@ a.naglowek
 {
 	font-size: 14px;
 	color: #70757a;
+}
+
+.results .pasekdolny
+{
+	grid-area: pasekd;
+}
+
+.results .podobne
+{
+	font-size: 20px;
+	color: black;
+	padding-bottom: 5px;
+}
+
+.results .podobnewyniki
+{
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 10px;
+}
+
+.results .lewakolumna
+{
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	color: rgb(18, 18, 168);
+	font-weight: bold;
+}
+
+.results .prawakolumna
+{
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	color: rgb(18, 18, 168);
+	font-weight: bold;
+}
+
+.results .podobnywynik
+{
+	padding: 3px;
 }
