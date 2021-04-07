@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="main2.css">
     </head>
-    <body class="results">
+    <body id="app" :class="{result: googlesearch.length>0}">
         <section class="container">
             <section class="pasekgora">
                 <section class="etykiety">
@@ -30,7 +30,7 @@
                 </section>
                 <div class="wyszukiwarka">
                     <img class="kl1" src="kl1.png">
-                    <input type="search">
+                    <input v-model="googlesearch" type="search">
                     <img class="kl2" src="kl2.png">
                 </div>
                 <div class="buttony">
@@ -218,5 +218,13 @@
                     </section>
                 </section>
             </section>
+            <script>
+                var app= new Vue({
+                    el:"#app",
+                    data: {
+                        googleSearch:""
+                    }
+                })
+            </script>
         </section>
     </body>
