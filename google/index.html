@@ -5,6 +5,7 @@
         <title>Google</title>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="main2.css">
+        <script src="cities.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     </head>
     <body> 
@@ -139,6 +140,14 @@
                 </section>
                 <a class="ilewynikow">Około 18 760 000 000 wyników (0,62 s) </a>
                 <section class="wyniki">
+                    <section class="miasta">
+                        <div class="lista">
+                            <h1>Wyszukane miasta: </h1>
+                            <li v-for="miasto in filtrowaniemiast">
+                                {{ miasto.name }}
+                            </li>
+                        </div>
+                    </section>
                     <section class="wynik">
                         <section class="adres">
                             <section class="link">www.youtube.com </section>
@@ -146,14 +155,6 @@
                         </section>
                         <a class="naglowek" href="https://www.youtube.com/watch?v=kUhb1qvQj4c">Prawdziwa historia Agnieszki po wizycie w MCDonaldzie</a>
                         <section class="opis">Zalecam nie brać przykładu!</section>
-                    </section>
-                    <section class="wynik">
-                        <section class="adres">
-                            <section class="link">www.lubimyczytac.pl</section>
-                            <section class="corb">> top100</section>
-                        </section>
-                        <a class="naglowek" href="https://lubimyczytac.pl/top100">Trendy. Najpopularniejsze- LubimyCzytać.pl</a>
-                        <section class="opis">TOP 100 Luty 2021. Zestawienie TRENDY miesiąca pokazuje, które książki...</section>
                     </section>
                     <section class="wynik">
                         <section class="adres">
@@ -225,7 +226,18 @@
                       el: '#app',
                       data: {
                         googleSearch: '',
-                      }
+                        miasta: window.cities
+                      },
+                      computed: {
+                          filtrowaniemiast: function(){
+                              let wynik= this.miasta.filter(miasto=> miasto.name.includes(this.googleSearch));
+                              if (wynik.length>10)
+                              {
+                                  return wynik.slice(1,11);
+                              }
+                              return wynik;
+                            }
+                        }
                     });
                   </script>
             </section>
