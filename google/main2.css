@@ -10,7 +10,7 @@
 	grid-template-areas: 
             "logo input guzik"
             "etykiety etykiety etykiety"
-            ". wyniki wyniki"
+            "miasta wyniki wyniki"
             "pasekd pasekd pasekd";
 }
 
@@ -34,6 +34,7 @@
 	padding-top: 45px;
 	grid-area: guzik;
 }
+
 
 .results .wyszukiwarka
 {
@@ -65,10 +66,15 @@
 }
 .results .wyniki
 {
-	padding-top: 50px;
+	padding-top: 30px;
 	grid-area: wyniki;
 	display: flex;
 	flex-direction: column;
+}
+
+.results .miasta
+{
+	padding-bottom: 20px;
 }
 
 .results .wynik
