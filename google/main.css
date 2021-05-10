@@ -332,60 +332,6 @@ a.ilewynikow
     text-align: left;
 }
 
-.autocompleter
-{
-    display: flex;
-    flex: 100%;
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(32,33,36,.28);
-    display: flex;
-    flex-direction: column;
-    border-radius: 0 0 25px 25px;
-    padding-bottom: 4px; 
-    padding-top: 10px;
-    margin-top: -11px;
-
-}
-
-.cmbBox
-{
-    display: flex;
-    flex:1 ;
-    flex-direction: column;
-    width: 550px;
-    margin-top: 10px;
-    margin: 0 auto;
-    font-size: 16px;
-    color: #212121;
-    list-style: none;
-    padding: 0;
-    padding-bottom: 8px;
-    font-family: arial,sans-serif;
-    cursor: pointer;
-}
-
-.cmbWyniki
-{
-    font-family: arial,sans-serif;
-    padding: 2px 0 2px 11px;
-}
-
-.cmblupa
-{
-    margin: auto;
-    height: 20px;
-    padding-top: 10px;
-    padding-left: 3px;
-    padding-right: 10px;
-    cursor: pointer;
-
-}
-
-.cmbpogrub
-{
-    display: inline-block;
-}
-
 .pustka
 {
     display: none;
