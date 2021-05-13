@@ -36,7 +36,12 @@
                     </section>
                     <div class="wyszukiwarka">
                         <img class="kl1" src="kl1.png">
-                        <input v-model="googleSearch" type="text" class="search_input" v-on:click="ustaw()">
+                        <input v-model="googleSearch" 
+                        type="text" class="search_input" 
+                        v-on:click="ustaw()" 
+                        @keyup.down="idzDo(aktywnyWynik + 1)"
+                        @keyup.up="idzDo(aktywnyWynik - 1)"
+                        @keyup.enter="idzDoWynikow()">
                         <img class="kl2" src="kl2.png">
                         <div class="lista">
                             <div id="id" :class="[ googleSearch.length != 0 && filtrowaniemiast.length != 0 && c == 1 ? 'autocompleter' : 'pustka']">
@@ -234,8 +239,12 @@
                         googleSearch: '',
                         miasta: window.cities,
                         isActive: 0,
+                        aktywnyWynik: 0,
+                        autocompleterIsActive: false,
+                        isOnResult: false,
                         c: 0,
                       },
+        
                       computed: {
                           filtrowaniemiast: function(){
                               let wynik= this.miasta.filter(miasto=> miasto.name.includes(this.googleSearch));
@@ -270,10 +279,48 @@
                             }
                             },
 
+                            idzDo(index) 
+                            {
+                            if (!this.autocompleterIsActive) 
+                            {
+                                index = 0;
+                            }
+
+                            if (index > this.filtrowaniemiast.length - 1) 
+                            {
+                                index = 0;
+                            } 
+                            else if (index < 0) 
+                            {
+                                index = this.filtrowaniemiast.length - 1;
+                            }
+                        
+                            this.aktywnyWynik = index;
+                            this.autocompleterIsActive= true;
+                            this.googleSearch = this.filtrowaniemiast[index].name;
+                            },
+
+                            idzDoWynikow(name)
+                            {
+                                this.autocompleterIsActive=true;
+                                if(name)
+                                {
+                                    this.googleSearch=name;
+                                }
+
+                                this.filtrowaniemiast=[];
+                                this.isOnResult=true;
+                                this.$nextTick(()=>
+                                {
+                                    this.isActive=0;
+                                })
+                            },
+
                             ustaw()
                             {
-                                this.c = 1;
+                                this.c=1;
                             },
+
                         }
                     });
                   </script>
