@@ -52,15 +52,29 @@
     display: inline-block;
 }
 
-.lista .result:hover {
-    border-left: 5px solid blue;
-    cursor: pointer;
+.nic
+{
+    display: none;
 }
 
-.lista .result.active {
-    background-color: gray;
+.cmbWyniki:hover, .cmbWyniki:focus{
+    border-left: 5px solid blue;
+    cursor: pointer;
+    background-color: rgb(224, 220, 220);
 }
+
 
 .bold {
     font-weight: bold;
 }
+
+#autocomp .cmbWyniki .active
+{
+    background-color: rgb(224, 220, 220);
+}
+
+.active
+{
+    background-color: rgb(224, 220, 220);
+}
+
