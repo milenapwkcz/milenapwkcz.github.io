@@ -68,13 +68,24 @@
     font-weight: bold;
 }
 
-#autocomp .cmbWyniki .active
+#autocomp .cmbBox .kolor
 {
     background-color: rgb(224, 220, 220);
 }
 
-.active
+.kolor
 {
     background-color: rgb(224, 220, 220);
 }
+
+.cmbWyniki .kolor
+{
+    background-color: rgb(224, 220, 220);
+}
+
+.cmbWyniki.kolor
+{
+    background-color: rgb(224, 220, 220);
+}
+
 
