@@ -41,9 +41,11 @@
                         <div class="lista">
                             <div id="autocomp" :class="[ googleSearch.length != 0 && filteredCities.length != 0 && kontrol == 1 ? 'autocompleter' : 'nic']">
                                 <ul class="cmbBox">
-                                    <li class="cmbWyniki" v-for="(city, index) in filteredCities" @click="change(city.name)" :class="[autocompIsActive && activeResult === index ? 'active' : '']">
-                                        <img class="cmblupa" src="kl1.png">
-                                        <div class="cmbpogrub" v-html="city.nameHtml">
+                                    <li class="cmbWyniki" v-for="(city, index) in filteredCities" @click="change(city.name)" :class="[autocompIsActive && activeResult === index ? 'kolor' : '']">
+                                        <div id="kolor" :class="[autocompIsActive && activeResult === index ? 'kolor' : '']">
+                                            <img class="cmblupa" src="kl1.png">
+                                            <div class="cmbpogrub" v-html="city.nameHtml">
+                                            </div>
                                         </div>  
                                     </li>
                                 </ul>
