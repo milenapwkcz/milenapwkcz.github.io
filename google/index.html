@@ -12,7 +12,7 @@
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     </head>
     <body> 
-        <div id="app" :class="[googleSearch.length != 0 && isActive == 1 ? 'results' : isActive = 0 ]"> 
+        <div id="app" :class="[ googleSearch.length != 0 && isActive == 1 ? 'results' : isActive = 0 ]"> 
             <section class="container">
                 <section class="pasekgora">
                     <section class="etykiety">
@@ -36,19 +36,14 @@
                     </section>
                     <div class="wyszukiwarka">
                         <img class="kl1" src="kl1.png">
-                        <input v-model="googleSearch" 
-                        type="text" class="search_input" 
-                        v-on:click="ustaw()" 
-                        @keyup.down="idzDo(aktywnyWynik + 1)"
-                        @keyup.up="idzDo(aktywnyWynik - 1)"
-                        @keyup.enter="idzDoWynikow()">
+                        <input v-model="googleSearch" type="text" v-on:click="ustaw()" @keyup.up="goTo(activeResult - 1)" @keyup.down="goTo(activeResult + 1)" @keyup.enter="zmiana(googleSearch)">
                         <img class="kl2" src="kl2.png">
                         <div class="lista">
-                            <div id="id" :class="[ googleSearch.length != 0 && filtrowaniemiast.length != 0 && c == 1 ? 'autocompleter' : 'pustka']">
+                            <div id="autocomp" :class="[ googleSearch.length != 0 && filteredCities.length != 0 && kontrol == 1 ? 'autocompleter' : 'nic']">
                                 <ul class="cmbBox">
-                                    <li class="cmbWyniki" v-for="miasto in filtrowaniemiast" v-on:click="zmiana(miasto.name)">
+                                    <li class="cmbWyniki" v-for="(city, index) in filteredCities" @click="change(city.name)" :class="[autocompIsActive && activeResult === index ? 'active' : '']">
                                         <img class="cmblupa" src="kl1.png">
-                                        <div class="cmbpogrub" v-html="pogrub(miasto.name)">
+                                        <div class="cmbpogrub" v-html="city.nameHtml">
                                         </div>  
                                     </li>
                                 </ul>
@@ -235,96 +230,83 @@
                 </section>
                 <script>
                     var app = new Vue({
-                      el: '#app',
-                      data: {
-                        googleSearch: '',
-                        miasta: window.cities,
-                        isActive: 0,
-                        aktywnyWynik: 0,
-                        autocompleterIsActive: false,
-                        isOnResult: false,
-                        c: 0,
-                      },
+                        el: '#app', 
+                        data: 
+                        {
+                            googleSearch: '',
+                            isActive: 0,
+                            kontrol: 0,
+                            autocompleterIsActive: false,
+                            activeResult: 0,
+                            filteredCities: [],
+                            cities: window.cities.map((cityData) => {
+                                cityData.nameLowerCase = cityData.name.toLowerCase();
+                            return cityData;
+                            })
+                        },
+                        watch: 
+                        {
+                            googleSearch() {
+                                if (this.autocompleterIsActive) {
+                                    return;
+                                }
+                                if (this.googleSearch.length === 0) {
+                                    filteredCities = [];
+                                    return;
+                                }
+                                let returnedCities = [];
+                                let searchLowerCase = this.googleSearch.toLowerCase();
 
-                
-                      computed: {
-                          filtrowaniemiast: function(){
-                              let wynik= this.miasta.filter(miasto=> miasto.name.includes(this.googleSearch));
-                              if (wynik.length>10)
-                              {
-                                  return wynik.slice(1,11);
-                              }
-                              return wynik;
+                                this.cities.forEach((cityData) => {
+                                    if (returnedCities.length === 10 || !cityData.nameLowerCase.includes(searchLowerCase)) {
+                                        return;
+                                    }
+                                    returnedCities.push({
+                                        name: cityData.name,
+                                        nameHtml: cityData.nameLowerCase.replace(searchLowerCase, (match) => {
+                                        return '<span class="bold">' + match + '</span>';
+                                    })
+                                })
+                            });
+        
+                            this.filteredCities = returnedCities;
                             }
                         },
-                        
-                        methods:{
-                            pogrub(wynik)
-                            {
-                                wpisane= this.googleSearch;
-                                var zmienna= wynik.split(wpisane);
-                                for (i=0; i<zmienna.length; i++)
-                                {
-                                    wynik=wynik.replace(zmienna[i], zmienna[i].bold())
-                                }
-                                return wynik;
-                            },
-
-                            zmiana(z)
+                        methods:
+                        {
+                            zmiana: function(a)
                             {
                                 if(this.isActive == 0)
-                            {
-                                this.isActive = 1;
-                                this.googleSearch = z;
-                                a = document.getElementById("id");
-                                a.blur();
-                                this.c = 0;  
-                            }
-                            },
-
-                            idzDo(index) 
-                            {
-                            if (!this.autocompleterIsActive) 
-                            {
-                                index = 0;
-                            }
-
-                            if (index > this.filtrowaniemiast.length - 1) 
-                            {
-                                index = 0;
-                            } 
-                            else if (index < 0) 
-                            {
-                                index = this.filtrowaniemiast.length - 1;
-                            }
-                        
-                            this.aktywnyWynik = index;
-                            this.autocompleterIsActive= true;
-                            this.googleSearch = this.filtrowaniemiast[index].name;
-                            },
-
-                            idzDoWynikow(name)
-                            {
-                                this.autocompleterIsActive=true;
-                                if(name)
                                 {
-                                    this.googleSearch=name;
+                                    this.isActive = 1;
+                                    this.googleSearch = a;
+                                    el2 = document.getElementById("autocom");
+                                    el2.blur();
+                                    this.kontrol = 0;
                                 }
-
-                                this.filtrowaniemiast=[];
-                                this.isOnResult=true;
-                                this.$nextTick(()=>
-                                {
-                                    this.isActive=0;
-                                })
                             },
-
-                            ustaw()
+                            ustaw: function()
                             {
-                                this.c=1;
+                                this.kontrol = 1;
                             },
+                            goTo: function(index)
+                            {
+                                if (!this.autocompleterIsActive) {
+                                    index = 0;
+                                } 
 
+                                if (index > this.filteredCities.length - 1) {
+                                    index = 0;
+                                } else if (index < 0) {
+                                    index = this.filteredCities.length - 1;
+                                }
+        
+                                this.autocompleterIsActive = true;
+                                this.activeResult = index;
+                                this.googleSearch = this.filteredCities[index].name;
+                            }
                         }
+  
                     });
                   </script>
             </section>
