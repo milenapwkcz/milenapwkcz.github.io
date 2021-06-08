@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kolokwium</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="cell" :class="[active== '1,1' ? 'active' : '']">></div>>
+            <a>1</a>
+        </div>
+        <ul class="kwadrat" v-for="liczbar in rows">
+            <li v-for="liczbak in columns">
+                <div class="cell">1</div>
+            </li>
+        </ul>
+    {{ message }}
+    
+    </div>
+
+    <script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Powodzenia',
+            rows: 10,
+            columns: 10,
+            active: '1,1', 
+        }
+    })
+    </script>
+</body>
+</html>
