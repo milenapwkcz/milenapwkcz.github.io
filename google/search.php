@@ -1,6 +1,6 @@
 <?php
     $miasta= file_get_contents('./cities.json', true);
-    $dekodowanie= json_decode($cities);
+    $dekodowanie= json_decode($miasta);
     $wynik=array();
     $slowo= htmlspecialchars($_GET["name"]);
     foreach ($dekodowanie as &$miasto)
