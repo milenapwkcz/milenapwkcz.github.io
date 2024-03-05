@@ -30,6 +30,12 @@
       font-size: 25px;
     }
 
+    #additionalText2
+    {
+      margin-top: 15px;
+      font-size: 10px;
+    }
+
     button {
       font-size: 20px; 
       padding: 10px 20px; 
@@ -77,6 +83,7 @@
   <div id="additionalText"></div>
   <div id="result"></div>
   <img id="image">
+  <div id="additionalText2"></div>
   <div id="listR"></div>
 
   <script>
@@ -151,10 +158,12 @@
       var obrazekUrl = listaObrazkow[wylosowaneSlowo];
       var restaruacje= listaRestauracji[wylosowaneSlowo];
       var dodatkowyTekst = "Oto Twoja kuchnia:";
+      var dodatkowyTekst2= "Przykładowe restauracje w Krk:"
       
       document.getElementById("additionalText").innerHTML = dodatkowyTekst;
       document.getElementById("result").innerHTML = wylosowaneSlowo;
       document.getElementById("image").src = obrazekUrl;
+      document.getElementByID("additionalText2").innerHTML = dodatkowyTekst2;
       document.getElementByID("listR").innerHTML= restauracje;
     }
   </script>
