@@ -1,153 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wybierz kuchnię na dziś!!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
 
-<div class=container>
+    #result {
+      font-size: 18px;
+      margin-top: 20px;
+    }
 
-    <head>
-        <script src="https://www.googleoptimize.com/optimize.js?id=OPT-5J756NS"></script>
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WGH9TLN');</script>
-        <!-- End Google Tag Manager -->
-        <link rel="stylesheet" href="styles.css">
-        <title>Projekt_CAD</title>
-        <h2 class='witaj'>Witaj!</h2>
-        <br>
-        <br>
-        <h1 class="zarejestruj-się">Najlepsza </h1>
-        <h1 class="zarejestruj-się">Muzyka dla </h1>
-        <h1 class="zarejestruj-się">Kazdego</h1>
-    </head>
+    #image {
+      max-width: 300px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
 
-    <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGH9TLN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <button class='button'>Korzystaj za darmo!</button>
-        <p></p>
+  <h1>Wylosuj kuchnię n adziś</h1>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <iframe width="550" height="315" src="https://www.youtube.com/embed/d0aDo0cQJ8g?controls=0">
-        </iframe>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+  <button onclick="losujSlowo()">Losuj Słowo</button>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Ennio Morricone album "Morricone 60"<br>
-                        <a
-                            href="https://allegro.pl/oferta/hans-zimmer-live-in-prague-4lp-winyl-coloured-ltd-12028973836?fbclid=IwAR0lEOca8kkrQqTlpCTWrjDmQatV_nVVEHAMzWvaLDm7It2aCpg-vga8gkA">
-                            <img alt="morricone"
-                                src="data:image/jpeg;base64,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"
-                                width=150" height="150">
-                        </a>
-                    </th>
-                    <th>Hans Zimmer album "Live in Prague" <br>
-                        <a
-                            href="https://www.empik.com/morricone-60-years-of-music-morricone-ennio,p1131200071,muzyka-p?cq_src=google_ads&cq_cmp=14266542437&cq_term=&cq_plac=&cq_net=u&cq_plt=gp&gclid=CjwKCAjw9qiTBhBbEiwAp-GE0X6PS5QZuMWD-bOimgSoqeB4YGwnUrChb4rTXOoXJa1ma7nTFj2QXRoCqr4QAvD_BwE&gclsrc=aw.ds&fbclid=IwAR0x5K7iTKRwuqWG1F-K1X9i8ctsJ02TqGRLqIRu6F4yfgRvUTe18K8fTpA">
-                            <img alt="Qries" src="https://ecsmedia.pl/c/60-years-of-music-w-iext106139711.jpg"
-                                width=150" height="150">
-                        </a>
-                    </th>
+  <div id="result"></div>
+  <img id="image" src="" alt="Wylosowany obrazek">
 
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>"Morricone 60" to pierwszy album zawierający najsłynniejsze przeboje Ennio Morricone dyrygowane
-                        przez artystę i nagrane pod jego nadzorem. Możemy tu podziwiać słynnego Maestro dyrygującego
-                        swoimi najsłynniejszymi tematami z filmów takich jak "The Good", "The Bad and the Ugly" czy
-                        nagrodzony Oscarem za muzykę filmową obraz Quentina Tarantino
-                        "The Hateful Eight" ("Nienawistna
-                        ósemka"). </td>
-                    <td>Limitowany zestaw czterech fioletowych płyt winylowych o gramaturze 180g. Koncert w Pradze 2016
-                        został nagrany podczas niezwykle udanej europejskiej trasy koncertowej Hansa Zimmera. Hansowi
-                        towarzyszył zespół, orkiestra i chór, łącznie 72 muzyków, w tym gitarzysta Johnny Marr.
-                        Inscenizacja była spektakularna z przełomowym pokazem świetlnym, oszałamiającą grafiką i
-                        najnowocześniejszym systemem dźwiękowym. </td>
+  <script>
+    // Lista słów
+    var listaSlow = ["włoska", "grecka", "śródziemnomorska", "japońska", "indyjska", "meksykańska", "koreańska", "turecka", "amerykańska", "francuska", "chińska", "polska", "gruzińska", "ukraińska", "żydowska", "wschodnia", "turecka"];
 
-                </tr>
-                <tr>
-                    <td><button class='button-m'><a
-                                href="https://www.empik.com/morricone-60-years-of-music-morricone-ennio,p1131200071,muzyka-p?cq_src=google_ads&cq_cmp=14266542437&cq_term=&cq_plac=&cq_net=u&cq_plt=gp&gclid=CjwKCAjw9qiTBhBbEiwAp-GE0X6PS5QZuMWD-bOimgSoqeB4YGwnUrChb4rTXOoXJa1ma7nTFj2QXRoCqr4QAvD_BwE&gclsrc=aw.ds&fbclid=IwAR0x5K7iTKRwuqWG1F-K1X9i8ctsJ02TqGRLqIRu6F4yfgRvUTe18K8fTpA">szczegóły</a></button>
-                    </td>
-                    <td><button class='button-m'><a
-                                href="https://allegro.pl/oferta/hans-zimmer-live-in-prague-4lp-winyl-coloured-ltd-12028973836?fbclid=IwAR0lEOca8kkrQqTlpCTWrjDmQatV_nVVEHAMzWvaLDm7It2aCpg-vga8gkA">szczegóły</button></td>
+    // Lista obrazków odpowiadających słowom
+    var listaObrazkow = {
+      "włoska": "url_do_obrazka_jabka.jpg",
+      "grecka": "url_do_obrazka_kota.jpg",
+      "śródziemnomorska": "url_do_obrazka_samochodu.jpg",
+      "japońska": "url_do_obrazka_domu.jpg",
+      "indyjska": "url_do_obrazka_ksiazki.jpg",
+      "meksykańska": "url_do_obrazka_telefonu.jpg",
+      "koreańska": "url_do_obrazka_kwiatu.jpg",
+      "turecka": "url_do_kuchni.jpg",
+      "amerykańska": "url_do_kuchni.jpg",
+      "francuska": "url.jpg",
+      "chińska": "url.jpg",
+      "polska": "url.jpg",
+      "gruzińska": "url.jpg",
+      "ukraińska": "url.jpg",
+      "żydowska": "url.jpg",
+      "wschodnia": "url.jpg",
+      "turecka": "url.jpg"
+    };
 
-                </tr>
+    function losujSlowo() {
+      var indeks = Math.floor(Math.random() * listaSlow.length);
+      var wylosowaneSlowo = listaSlow[indeks];
+      var obrazekUrl = listaObrazkow[wylosowaneSlowo];
 
-                <tr>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-                
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h1 class="zarejestruj-się">Formularz </h1>
-        <br>
-        <br>
+      document.getElementById("result").innerHTML = "Wylosowane słowo: " + wylosowaneSlowo;
+      document.getElementById("image").src = obrazekUrl;
+    }
+  </script>
 
-
-        <form>
-        <input class='input' type="text" , placeholder="imie i nazwisko">
-        <br>
-        <input class='input' type="text" , placeholder="telefon">
-        <br>
-
-        <input class='input-long' type="text" , placeholder="treść">
-        </form>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <button class='button'>Więcej</button>
-        <p></p>
-
-    </body>
-</div>
-
-
+</body>
 </html>
-
