@@ -10,6 +10,7 @@
       text-align: center;
       background-color: #EBC7E6;
       margin: 50px;
+      margin-top: 25px;
       cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AMOe/wD/q+MAXuz/AP/vngC/lv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAQAAAAAAAABABEQAAAREABAAAAAAAAAAAEVVQABFVUAAAAAAAAAAEARVVVREVRVUABAAAAEAAAAEVRVVVVVVVAAAAAQAEQAABFNVMzVVFVQAAARAAAARAAQ1MzVTURFUAARAAAAAABEEMxMzNVUVVARAAAAAAAAABDMzMxNVU1QAAAAAAAAAAEMzIzMzNVVVQAAAAAABAAQiIjIzMzNTNVQAAQAAAABCISISIyMzMzM1QAAAAAAAQiIhESMiMTMzM0AAAAAAAEIiIhIiIjMzEzNAAAAAAEQEIiIiIiMjMzM0ABEAAEQAAEREQiEiMkREQAAAEQQAAAAAAEIiIiJAAAAAAAAQAAAQAAAEIiEkAAAAEAAAAAAAAAAQBCIiJABAAAAAAAAAAAABAABGIkAABAAAAAAAAAAAEAAABEQAAABAAAAAAAAAAQAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAAAAAABBAAAAAAAAAAAAAAAAAAAAQREAAAAAAAAAAAAAAAAAAEREAAAAAAAAAAAAAAAAAAD///////////////////////////3//3/+x8b//4OD//sAAb9/AAH9nwAB8+cAAc/5AAE//wAB//4AAP/cAAB3+AAAP/gAAD/4AAA/5AAAZ54AAPl/4A/++/Afv/+wG///eD3//vx+//3//3//////P////z////8P////D////w=='), auto;
     }
 
@@ -23,6 +24,10 @@
       max-width: 300px;
       margin-top: 20px;
     }
+
+    #additionalText
+    {
+      font-size: 25px;
 
     button {
       font-size: 20px; 
@@ -68,6 +73,7 @@
 
   <button onclick="losujSlowo()">Losowanko</button>
 
+  <div id="additionalText">Oto Twoja kuchnia:</div>
   <div id="result"></div>
   <img id="image" src="" alt="Wylosowany obrazek">
 
@@ -98,9 +104,9 @@
 
     // Lista obrazków odpowiadających słowom
     var listaObrazkow = {
-      "włoska": "url_do_obrazka_jabka.jpg",
-      "grecka": "url_do_obrazka_kota.jpg",
-      "śródziemnomorska": "url_do_obrazka_samochodu.jpg",
+      "włoska": "https://i.gifer.com/20SQ",
+      "grecka": "https://tenor.com/view/hermes-go-go-gone-babe-quick-gods-gif-19332914",
+      "śródziemnomorska": "https://www.icegif.com/sea-turtles-3/",
       "japońska": "url_do_obrazka_domu.jpg",
       "indyjska": "url_do_obrazka_ksiazki.jpg",
       "meksykańska": "url_do_obrazka_telefonu.jpg",
@@ -122,8 +128,8 @@
       var indeks = Math.floor(Math.random() * listaSlow.length);
       var wylosowaneSlowo = listaSlow[indeks];
       var obrazekUrl = listaObrazkow[wylosowaneSlowo];
-
-      document.getElementById("result").innerHTML = "Wylosowane słowo: " + wylosowaneSlowo;
+      
+      document.getElementById("result").innerHTML = wylosowaneSlowo;
       document.getElementById("image").src = obrazekUrl;
     }
   </script>
