@@ -73,9 +73,10 @@
 
   <button onclick="losujSlowo()">Losowanko</button>
 
-  <div id="additionalText">Oto Twoja kuchnia:</div>
+  <div id="additionalText"></div>
   <div id="result"></div>
   <img id="image" src="" alt="Wylosowany obrazek">
+  <div id="listR"></div>
 
   <script>
 
@@ -123,14 +124,38 @@
       "turecka": "url.jpg"
     };
 
+    var listaRestauracji = {
+      "włoska": "https://i.gifer.com/20SQ",
+      "grecka": "https://tenor.com/view/hermes-go-go-gone-babe-quick-gods-gif-19332914",
+      "śródziemnomorska": "https://www.icegif.com/sea-turtles-3/",
+      "japońska": "url_do_obrazka_domu.jpg",
+      "indyjska": "url_do_obrazka_ksiazki.jpg",
+      "meksykańska": "url_do_obrazka_telefonu.jpg",
+      "koreańska": "url_do_obrazka_kwiatu.jpg",
+      "turecka": "url_do_kuchni.jpg",
+      "amerykańska": "url_do_kuchni.jpg",
+      "francuska": "url.jpg",
+      "chińska": "url.jpg",
+      "polska": "url.jpg",
+      "gruzińska": "url.jpg",
+      "ukraińska": "url.jpg",
+      "żydowska": "url.jpg",
+      "wschodnia": "url.jpg",
+      "turecka": "url.jpg"
+    };
+
 
     function losujSlowo() {
       var indeks = Math.floor(Math.random() * listaSlow.length);
       var wylosowaneSlowo = listaSlow[indeks];
       var obrazekUrl = listaObrazkow[wylosowaneSlowo];
+      var restaruacje= listaRestauracji[wylosowaneSlowo];
+      var dodatkowyTekst = "Oto Twoja kuchnia:";
       
+      document.getElementById("additionalText").innerHTML = dodatkowyTekst;
       document.getElementById("result").innerHTML = wylosowaneSlowo;
       document.getElementById("image").src = obrazekUrl;
+      document.getElementByID("listR").innerHTML= restauracje;
     }
   </script>
 
