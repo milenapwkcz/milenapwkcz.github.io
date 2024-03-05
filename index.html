@@ -30,32 +30,36 @@
       margin-top: 20px;
     }
 
-    #heart-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-    }
-
     .heart {
-      position: absolute;
-      width: 16px;
-      height: 16px;
-      background-color: white;
-      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-      animation: fall 2s linear infinite;
+    min-width: 22px;
+    min-height: 22px;
+    font-size: 19px;
+    color: white;
+    position: absolute;
+    top:-15vh;
+    animation: rain 3s linear 1;
+    z-index: 0;
     }
 
-    @keyframes fall {
+    @keyframes rain {
       0% {
-        transform: translateY(0) rotate(45deg);
+        transform: translateY(-10vh) rotateZ(0deg);
       }
-      100% {
-        transform: translateY(100vh) rotate(45deg);
+      25% {
+        transform: translateY(27vh) rotateZ(20deg);
       }
-    }
+      50% {
+        transform: translateY(55vh) rotateZ(-20deg);
+      }
+      75% {
+        transform: translateY(90vh) rotateZ(20deg);
+      }
+       100% {
+        transform: translateY(110vh) rotateZ(-20deg);
+       }
+}
+
+   
   </style>
 </head>
 <body>
@@ -68,6 +72,27 @@
   <img id="image" src="" alt="Wylosowany obrazek">
 
   <script>
+
+    var rain = document.getElementById("rain")
+    function zróbSerduszka () {
+      const heart  = document.createElement("div");
+      heart.classList.add("heart")
+      heart.innerText = "❤"
+      heart.style.left = Math.floor(Math.random()*100)+"vw"
+      heart.style.animationDuration = Math.floor(Math.random()*2)+2+"s"
+      document.body.appendChild(heart)
+    }
+    setInterval(zróbSerduszka,100);
+
+    var heart = document.getElementsByClassName("heart")
+    setInterval(()=>{
+      for (let i = 0; i < heart.length; i++) {
+        if (i > 30) {
+          heart[0].remove()
+        }
+      }
+    },50)
+    
     // Lista słów
     var listaSlow = ["włoska", "grecka", "śródziemnomorska", "japońska", "indyjska", "meksykańska", "koreańska", "turecka", "amerykańska", "francuska", "chińska", "polska", "gruzińska", "ukraińska", "żydowska", "wschodnia", "turecka"];
 
@@ -92,18 +117,6 @@
       "turecka": "url.jpg"
     };
 
-    function dodajSerduszko() {
-      var heart = document.createElement("div");
-      heart.className = "heart";
-      document.getElementById("heart-container").appendChild(heart);
-      setTimeout(function () {
-        heart.remove();
-      }, 2000); 
-    }
-
-    function dodajSerduszka() {
-      setInterval(dodajSerduszko, 500); 
-    }
 
     function losujSlowo() {
       var indeks = Math.floor(Math.random() * listaSlow.length);
@@ -112,7 +125,6 @@
 
       document.getElementById("result").innerHTML = "Wylosowane słowo: " + wylosowaneSlowo;
       document.getElementById("image").src = obrazekUrl;
-      dodajSerduszka();
     }
   </script>
 
