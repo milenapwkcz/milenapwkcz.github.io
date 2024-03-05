@@ -18,6 +18,7 @@
       font-size: 40px;
       margin-top: 20px;
       text-align: center;
+      animation: rotateAnimation 5s linear infinite;
     }
 
     #image {
@@ -41,7 +42,7 @@
     #listR
     {
       margin-top: 15px;
-      font-size: 5px;
+      font-size: 15px;
     }
 
     button {
@@ -77,6 +78,15 @@
        100% {
         transform: translateY(110vh) rotateZ(-20deg);
        }
+
+      @keyframes rotateAnimation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}
 }
 
    
