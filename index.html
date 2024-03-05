@@ -9,24 +9,58 @@
       font-family: Arial, sans-serif;
       text-align: center;
       margin: 50px;
+      background-color: #EBC7E6;
     }
 
     #result {
       font-size: 18px;
       margin-top: 20px;
+      text-align: center;
     }
 
     #image {
       max-width: 300px;
       margin-top: 20px;
     }
+
+    button {
+      font-size: 20px; 
+      padding: 10px 20px; 
+      margin-top: 20px;
+    }
+
+    #heart-container {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+
+    .heart {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: white;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      animation: fall 2s linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(45deg);
+      }
+      100% {
+        transform: translateY(100vh) rotate(45deg);
+      }
+    }
   </style>
 </head>
 <body>
 
-  <h1>Wylosuj kuchnię n adziś</h1>
+  <h1>Wylosuj kuchnię na dziś</h1>
 
-  <button onclick="losujSlowo()">Losuj Słowo</button>
+  <button onclick="losujSlowo()">Losowanko</button>
 
   <div id="result"></div>
   <img id="image" src="" alt="Wylosowany obrazek">
@@ -56,6 +90,19 @@
       "turecka": "url.jpg"
     };
 
+    function dodajSerduszko() {
+      var heart = document.createElement("div");
+      heart.className = "heart";
+      document.getElementById("heart-container").appendChild(heart);
+      setTimeout(function () {
+        heart.remove();
+      }, 2000); 
+    }
+
+    function dodajSerduszka() {
+      setInterval(dodajSerduszko, 500); 
+    }
+
     function losujSlowo() {
       var indeks = Math.floor(Math.random() * listaSlow.length);
       var wylosowaneSlowo = listaSlow[indeks];
@@ -63,6 +110,7 @@
 
       document.getElementById("result").innerHTML = "Wylosowane słowo: " + wylosowaneSlowo;
       document.getElementById("image").src = obrazekUrl;
+      dodajSerduszka();
     }
   </script>
 
