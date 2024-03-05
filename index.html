@@ -9,6 +9,7 @@
       font-family: "Lucida Console", monospace;
       text-align: center;
       background-color: #EBC7E6;
+      color: white;
       margin: 50px;
       cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AMOe/wD/q+MAXuz/AP/vngC/lv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAQAAAAAAAABABEQAAAREABAAAAAAAAAAAEVVQABFVUAAAAAAAAAAEARVVVREVRVUABAAAAEAAAAEVRVVVVVVVAAAAAQAEQAABFNVMzVVFVQAAARAAAARAAQ1MzVTURFUAARAAAAAABEEMxMzNVUVVARAAAAAAAAABDMzMxNVU1QAAAAAAAAAAEMzIzMzNVVVQAAAAAABAAQiIjIzMzNTNVQAAQAAAABCISISIyMzMzM1QAAAAAAAQiIhESMiMTMzM0AAAAAAAEIiIhIiIjMzEzNAAAAAAEQEIiIiIiMjMzM0ABEAAEQAAEREQiEiMkREQAAAEQQAAAAAAEIiIiJAAAAAAAAQAAAQAAAEIiEkAAAAEAAAAAAAAAAQBCIiJABAAAAAAAAAAAABAABGIkAABAAAAAAAAAAAEAAABEQAAABAAAAAAAAAAQAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAAAAAABBAAAAAAAAAAAAAAAAAAAAQREAAAAAAAAAAAAAAAAAAEREAAAAAAAAAAAAAAAAAAD///////////////////////////3//3/+x8b//4OD//sAAb9/AAH9nwAB8+cAAc/5AAE//wAB//4AAP/cAAB3+AAAP/gAAD/4AAA/5AAAZ54AAPl/4A/++/Afv/+wG///eD3//vx+//3//3//////P////z////8P////D////w=='), auto;
     }
@@ -83,7 +84,6 @@
   <div id="additionalText"></div>
   <div id="result"></div>
   <img id="image">
-  <div id="additionalText2"></div>
   <div id="listR"></div>
 
   <script>
@@ -109,7 +109,7 @@
     },50)
     
     // Lista słów
-    var listaSlow = ["włoska", "grecka", "śródziemnomorska", "japońska", "indyjska", "meksykańska", "koreańska", "turecka", "amerykańska", "francuska", "chińska", "polska", "gruzińska", "ukraińska", "żydowska", "wschodnia"];
+    var listaSlow = ["włoska", "grecka", "śródziemnomorska", "japońska", "indyjska", "meksykańska", "koreańska", "turecka", "amerykańska", "francuska", "chińska", "polska", "gruzińska", "ukraińska", "żydowska", "wschodnia", "syryjska", "tajska", "wietnamska", "hiszpańska", "hawajska"];
 
     // Lista obrazków odpowiadających słowom
     var listaObrazkow = {
@@ -128,26 +128,36 @@
       "gruzińska": "https://tenor.com/view/sponge-bob-georgia-gif-24441049.gif",
       "ukraińska": "https://tenor.com/view/peepo-ukraine-ukraine-gif-25248808.gif",
       "żydowska": "https://gettrendygifs.wordpress.com/2015/12/08/new-trending-gif-tagged-tv-guy-family-family/.gif",
-      "wschodnia": "https://pixels.com/featured/funny-middle-eastern-food-lovers-i-smell-shawarma-print-jacob-hughes.html?product=greeting-card.gif"
+      "wschodnia": "https://pixels.com/featured/funny-middle-eastern-food-lovers-i-smell-shawarma-print-jacob-hughes.html?product=greeting-card.gif",
+      "syryjska": "https://tenor.com/view/syria-flag-walking-parade-gif-14464077.gif",
+      "tajska": "https://getyarn.io/yarn-clip/ce57bc90-8677-457e-bf3a-fb0b324c70e2/gif.gif",
+      "wietnamska": "https://www.bigfooty.com/forum/media/vietnam-flashback-gif.88211/.gif",
+      "hiszpańska": "https://i.gifer.com/36Fj.gif",
+      "hawajska": "https://gifdb.com/images/high/hawaii-496-x-278-gif-dgj5orhekkx25jed.gif"
     };
 
     var listaRestauracji = {
-      "włoska": "https://i.gifer.com/20SQ",
-      "grecka": "https://tenor.com/view/hermes-go-go-gone-babe-quick-gods-gif-19332914",
-      "śródziemnomorska": "https://www.icegif.com/sea-turtles-3/",
-      "japońska": "url_do_obrazka_domu.jpg",
-      "indyjska": "url_do_obrazka_ksiazki.jpg",
-      "meksykańska": "url_do_obrazka_telefonu.jpg",
-      "koreańska": "url_do_obrazka_kwiatu.jpg",
-      "turecka": "url_do_kuchni.jpg",
-      "amerykańska": "url_do_kuchni.jpg",
-      "francuska": "url.jpg",
-      "chińska": "url.jpg",
-      "polska": "url.jpg",
-      "gruzińska": "url.jpg",
-      "ukraińska": "url.jpg",
-      "żydowska": "url.jpg",
-      "wschodnia": "url.jpg"
+      "włoska": "Trattoria Mamma Mia, Tivoli, Il Piatto, Nolio, Olio, Norma, Trattoria Soprano, Tutti Santi",
+      "grecka": "Real Greek, Minoas Greek Tavern, FILO, Balkan Express Grill",
+      "śródziemnomorska": "Folga, Trattoria Degusti, Papryczki 5, By The Way",
+      "japońska": "77 Sushi, Urara Sushi, doskoi, The Tokio Tower",
+      "indyjska": "India Masala, Taste of India, Royal Curry, Zeera, Indus Tandoor, Spice of India",
+      "meksykańska": "Poco Loco, Manzana, Taco Mexicano, Del Jero, Alebriche, Tres Amigos, Los Gorditos",
+      "koreańska": "Pan Kimbap, Oriental Spoon, THE BAP, CHOI's Korean Chicken, LaLa Seul",
+      "turecka": "OTTAMAM, Jamra, Efendi, Polenez, Baba Turkish Food",
+      "amerykańska": "Well Done, Matt's Cheesesteakes, Route 66, Moo Moo",
+      "francuska": "Petite France, ZAZIE Bistro, Cyrano de Bergerac, Charlotte, Zakładka Bistro",
+      "chińska": "Phong Hai, Hoang Hai, Phuong Dong",
+      "polska": "Zalewajka, Kuchnia u Doroty, Polska Gąska",
+      "gruzińska": "Chinkalnia, Smaki Gruzji, GUAMARDŻOS, Tbilisuri",
+      "ukraińska": "Kalejdoskop, Złote Serce, Ciepło, Smak Ukraiński",
+      "żydowska": "Ariel, Awiw, Klezmer-Hois, Hamsa, Ester",
+      "wschodnia": "Wschód Bar",
+      "syryjska": "Zaytouna, Mezzalians, Sham Falafel",
+      "tajska": "Taj Kraków, Thai Fun, Yam Yam, Molam, Little Thai",
+      "wietnamska": "Non La, Sao Viet, Yum Yum, Pho, Dong-A",
+      "hiszpańska": "Euskadi, Manana",
+      "hawajska": "Hawajskie Niebo w Gębie"
     };
 
 
@@ -157,13 +167,11 @@
       var obrazekUrl = listaObrazkow[wylosowaneSlowo];
       var restaruacje= listaRestauracji[wylosowaneSlowo];
       var dodatkowyTekst = "Oto Twoja kuchnia:";
-      var dodatkowyTekst2= "Przykładowe restauracje w Krk:"
       
       document.getElementById("additionalText").innerHTML = dodatkowyTekst;
       document.getElementById("result").innerHTML = wylosowaneSlowo;
       document.getElementById("image").src = obrazekUrl;
-      document.getElementByID("additionalText2").innerHTML = dodatkowyTekst2;
-      document.getElementByID("listR").innerHTML= restauracje;
+      document.getElementByID("listR").innerHTML = "Przykładowe restauracje w Krk:" + restauracje;
     }
   </script>
 
