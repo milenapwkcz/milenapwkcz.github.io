@@ -3,7 +3,7 @@
 Hello everyone,
 
 This repository contains two pages made by using HTML, CSS and Javascript. 
-First one can be found under [CV](https://milenapwkcz.github.io/CV/)) hyperlink.
+First one can be found under [CV](https://milenapwkcz.github.io/CV/) hyperlink.
 The second one can be found uner [Cusine Generator](https://milenapwkcz.github.io) hyperlink.
 
 ## CV
